@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+    margin: 0%;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #6F2323;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, #6F2323 0%, #DDDBCB 100%);
+    box-shadow: 0 -100vh 0 100vh #DDDBCB;
+}
+
+.cursor {
+    z-index: 100;
+    position: fixed;
+    width:45px;
+    height:45px;
+    border:3px solid #DDDBCB;
+    background-color: #6c6c6c;
+    border-radius:50%;
+    box-shadow: 2px -3px 41px -1px #dddbcba3;
+    transition: all .1s linear; 
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.bg {
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transition: ease-in-out 300ms; 
+}
+
+
+h1 {
+    font-family: 'Bebas Neue';
+    color: #DDDBCB;
+    font-size: 50px;
+}
+h2 {
+    font-family: 'Bebas Neue';
+    color: #DDDBCB;
+    font-size: 50px;
+}
+h3 {
+    font-family: 'Bebas Neue';
+    color: #DDDBCB;
+    font-size: 50px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+.para {
+    position: relative;
+    height: auto;
+    width: 50vw;
+    z-index: 1;
+    transition: ease-in-out 300ms;
+    overflow: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.para_3 h2 {
+    color: #6F2323;
+    transition: ease-in-out 300ms;
+    transform:scale(1.5);
+}
+
+
+
+
+
+
+.bg6 img{
+    height:100vh;
+    width: 100vw;
+}
+
+.h {
+    text-decoration: line-through;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #0C2C3B;
+}
+
+
+
+.para_5 h2 {
+    color: #6F2323;
+}
+
+
+
+.para_8 {
+    opacity: .3;
+}
+
+.bg8 img{
+    height:100vh;
+    width: 100vw;
+}
+
+.bg9 img{
+    height:100vh;
+    width: 100vw;
+}
+
+
+.nine {
+    background-color: #0C2C3B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

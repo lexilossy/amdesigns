@@ -1,0 +1,140 @@
+@media only screen and (min-width:610px) {
+
+    .navigation-menu-mobile {
+        display: none;
+
+    }
+
+    .navigation-menu-desktop {
+        display: flex;
+        width: 70%;
+        max-width: 1000px;
+        justify-content: space-around;
+        color: #DF5E36;
+        margin-right: 2%;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 12.5px;
+        -webkit-text-stroke: 1px;
+        padding-left: 10px;
+        transition: all 700ms ease-in-out;
+    }
+
+    .navigation-menu-desktop a{
+        color: #DF5E36;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 12.5px;
+        -webkit-text-stroke: 1px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .navigation-menu-desktop p:hover{
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        text-decoration-color: rgb(251, 255, 0);
+        text-decoration-thickness: 2px;
+        cursor: pointer;
+    }
+
+
+    .main-explore{
+        height: 1000px;
+        transition: all 200ms ease-in-out;
+    }
+        .explore-the-lineup{
+            margin-top: 180px;
+            transition: all 200ms ease-in-out;
+        }
+
+            .scrolling-outer{
+                margin-top: 180px;
+                transition: all 200ms ease-in-out;
+            }
+
+
+
+
+    .footer{
+        height: 300px;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+        transition: all 400ms ease-in-out;
+    } 
+        .footer img{
+            object-position: 100% 0px;
+        }
+
+
+        .footer-socials{
+            margin-top: 240px;
+            margin-right: 7%;
+            max-width: 300px;
+            align-self: flex-end;
+            transition: all 500ms ease-in-out;
+        }
+
+        
+        .footer-base-box{
+            margin-top: 60px;
+            padding-bottom: 2%;
+            transition: all 400ms ease-in-out;
+        }
+
+    }
+
+
+
+
+
+
+@media only screen and (min-width:900px) {
+    .navigation-menu-desktop {
+        display: flex;
+        width: 70%;
+        max-width: 900px;
+        justify-content: space-around;
+        color: #DF5E36;
+        margin-right: 2%;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 18px;
+        -webkit-text-stroke: 1px;
+        padding-left: 10px;
+        transition: all 700ms ease-in-out;
+    }
+
+    .main-explore{
+        height: 1200px;
+        transition: all 200ms ease-in-out;
+    }
+        .explore-the-lineup{
+            margin-top: 200px;
+            transition: all 200ms ease-in-out;
+        }
+
+            .explore-the-lineup p{
+                font-size: 55px;
+                transition: all 200ms ease-in-out;
+            }
+
+            .scrolling-outer{
+                margin-top: 200px;
+                transition: all 200ms ease-in-out;
+            }
+
+
+
+    .footer{
+        height: 320px;
+        transition: all 400ms ease-in-out;
+    } 
+    .footer-socials{
+        margin-top: 250px;
+        transition: all 200ms ease-in-out;
+    }
+
+    
+    .footer-base-box{
+        margin-top: 90px;
+        transition: all 400ms ease-in-out;
+    }
+
+}

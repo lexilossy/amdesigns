@@ -1,0 +1,1323 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    cursor: none;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    color: white;
+}
+
+img {
+    object-fit: cover;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #c2d7b3;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(195, 255, 0);
+    box-shadow: 0 -100vh 0 100vh rgb(195, 255, 0);
+}
+
+
+
+.cacti_box {
+    position: fixed;
+    width: 50px;
+    height: auto;
+    top: 15px;
+    right: 20px;
+    z-index: 90;
+}
+
+.cacti {
+    position: relative;
+    height: 50px;
+    width: 50px;
+
+}
+
+.cactus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: ease-in-out 100ms;
+}
+.show {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: ease-in-out 100ms;
+    fill: #ffffff;
+    cursor: none;
+}
+
+.container {
+    max-height: 100vh;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+
+.screen {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c2d7b3;
+}
+.page_1, .page_2, .page_3, .page_4, .page_5, .page_6 {
+    background-color: #c2d7b3;
+}
+
+.screen1 {
+    position: sticky;
+    top: 0;
+
+}
+
+
+.page_1 {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.plants_bg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.plant1 {
+    position: absolute;
+}
+.plant1 img {
+    position: relative;
+    height: 110vw;
+    width: auto;
+    top: 23vw;
+}
+
+
+.plant2 {
+    position: absolute;
+}
+.plant2 img {
+    position: relative;
+    right: -2vw;
+    bottom: -15vh;
+    width: 87vw;
+}
+
+
+.plants_fg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.plant_fg {
+    position: absolute;
+}
+.plant_fg img {
+    position: relative;
+    bottom: -35vh;
+    width: 92vw;
+}
+
+
+
+
+.text_page_1 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 95vw;
+    margin-left: 5vw;
+}
+
+.top {
+    position: relative;
+    height: auto;
+    width: 70vw;
+    max-width: 300px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+.title {
+    position: relative;
+    height: 45vw;
+    width: 62vw;
+    bottom: 5vh;
+}
+
+.title img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.page_2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #c2d7b3;
+}
+
+.txt {
+    position: relative;
+    width: 75vw;
+    max-width: 740px;
+    height: auto;
+    text-align: center;
+    font-size: 1em;
+    top: 7vh;
+}
+
+.txtt {
+    position: relative;
+    width: 80vw;
+    height: auto;
+    text-align: left;
+    font-size: 28px;
+}
+
+
+.kitty_basics {
+    height: auto;
+    max-height: 333px;
+    width: 40vw;
+    max-width: 297px;
+}
+.kitty_basics img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.page_3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.text_page3 {
+    position: relative;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.plant_text, .cat_text {
+    position: relative;
+    width: 30vw;
+    text-align: center;
+    bottom: 5vh;
+}
+
+.pg_3_img {
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    bottom: 5vh;
+}
+
+.this_is_plant, .this_is_cat {
+    height: 60vw;
+    width: 30vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.this_is_plant img, .this_is_cat img {
+    height: 100%;
+    width: auto;
+    max-height: 600px;
+    max-width: 450px;
+}
+
+.gradient_pg3 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    background-image: linear-gradient(150deg, rgb(255, 255, 255), rgba(250, 255, 209, 0.814), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+
+.sun_text {
+    position: absolute;
+    font-size: 25px;
+    opacity: 1;
+    bottom: 5vh;
+    text-align: center;
+}
+
+
+.page_4 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.pg_4_text {
+    position: relative;
+    width: 80vw;
+    max-width: 600px;
+    height: 35vh;
+    text-align: center;
+    font-size: 1.7em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    transition: ease-in-out 200ms;
+    top: 5vh;
+}
+
+.pg_4_images {
+    position: relative;
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    line-height: 1px;
+}
+
+.cat {
+    position: absolute;
+    height: 100%;
+    width: 40vw;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: center ;
+    margin-bottom: 8vh;
+}
+.cat img {
+    position: absolute;
+    height: 100%;
+    width: fit-content;
+}
+
+.plants_container {
+    position: relative;
+    height: 100%;
+    width: 60vw;
+    max-width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vh;
+}
+
+.plants_row {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 300vw;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.pl {
+    position: relative;
+    width: 60vw;
+    max-width: 300px;
+    height: auto;
+    align-items: flex-end;
+}
+
+.pl img {
+    width: 100%;
+    height: fit-content;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 800px) {
+    .pg_4_images {
+        justify-content: space-around;
+    }
+    
+    .cat {
+        position: relative;
+    }
+    
+    .plants_container {
+        max-width: 400px;
+    }
+    
+    .pl {
+        max-width: 400px;
+        padding-bottom: 2vh;
+    }
+}
+
+
+
+
+
+.page_5 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.pg_5_text {
+    position: relative;
+    width: 80vw;
+    max-width: 470px;
+    height: 30vh;
+    text-align: center;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    transition: ease-in-out 200ms;
+}
+
+.pg_5_images {
+    position: relative;
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    line-height: 1px;
+}
+
+.toxic_cat {
+    position: absolute;
+    height: 100%;
+    width: 90vw;
+    max-width: 500px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: center ;
+    align-items: flex-end;
+    margin-bottom: 10vh;
+}
+.toxic_cat img {
+    position: absolute;
+    height: fit-content;
+    width: 100%;
+}
+
+.toxic_plants_container {
+    position: relative;
+    height: 80vh;
+    width: 38vw;
+    max-width: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+}
+
+.toxic_plants_row {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 200vw;
+    max-width: 1250px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.toxic_pl {
+    position: relative;
+    width: 38vw;
+    max-width: 250px;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.toxic_pl img {
+    width: 97%;
+    height: auto;
+}
+
+.tpl_text h1{
+    height: 30px;
+    line-height: 25px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .pg_5_images {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    
+    .toxic_cat {
+        position: relative;
+    }
+    
+    .toxic_plants_container {
+        position: relative;
+        max-width: 250px;
+    }
+    
+    .toxic_pl {
+        position: relative;
+        max-width: 250px;
+    }
+}
+
+
+.page_6 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.pg_6_text {
+    position: relative;
+    z-index: 10;
+    width: 80vw;
+    max-width: 450px;
+    height: 30vh;
+    text-align: center;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: ease-in-out 200ms;
+}
+
+.pg_6_text h1 {
+    position: absolute;
+}
+
+.tpc {
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.tpr {
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.tpl img{
+    width: 15vw;
+}
+
+.pg_6_cat {
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.pg_6_cat img {
+    position: absolute;
+    width: 30vw;
+    height: auto;
+}
+
+
+
+
+.page_7 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    background-image: linear-gradient(0deg, #6f8360, #c2d7b3);
+}
+
+.page_7 h1 {
+    font-size: 2em;
+    width: 75vw;
+    max-width: 600px;
+    margin-bottom: 20vh;
+}
+
+
+
+.footer {
+    position: absolute;
+    height: 16vh;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer h1 {
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+.footer_cat {
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    bottom: 0;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        cursor: none;
+    }
+    
+    h1 {
+        font-family: 'DM Serif Display', serif;
+        font-style: italic;
+        color: white;
+    }
+    
+    img {
+        object-fit: cover;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 5px;
+        position: absolute;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: #c2d7b3;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(195, 255, 0);
+        box-shadow: 0 -100vh 0 100vh rgb(195, 255, 0);
+    }
+    
+    #circle {
+        position: fixed;
+        z-index: 5;
+        width: 8px;
+        height: 8px;
+        background-color: rgb(195, 255, 0);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 100;
+    }
+    
+    .cacti_box {
+        position: fixed;
+        width: 50px;
+        height: auto;
+        top: 15px;
+        right: 20px;
+        fill: white;
+        z-index: 90;
+    }
+    
+    .cacti {
+        position: relative;
+        height: 50px;
+        width: 50px;
+    
+    }
+    
+    .cactus {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: ease-in-out 100ms;
+    }
+    .show {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: ease-in-out 100ms;
+    }
+    
+    .container {
+        max-height: 100vh;
+        overflow-x:hidden;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+    
+    
+    .screen {
+        height: 100vh;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #c2d7b3;
+    }
+    .page_1, .page_2, .page_3, .page_4, .page_5, .page_6 {
+        background-color: #c2d7b3;
+    }
+    
+    .screen1 {
+        position: sticky;
+        top: 0;
+    
+    }
+    
+    
+    .page_1 {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .plants_bg {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    .plant1 {
+        position: absolute;
+    }
+    .plant1 img {
+        position: relative;
+        height: 110vw;
+        width: auto;
+        top: 23vw;
+    }
+    
+    
+    .plant2 {
+        position: absolute;
+    }
+    .plant2 img {
+        position: relative;
+        right: -2vw;
+        bottom: -15vh;
+        width: 87vw;
+    }
+    
+    
+    .plants_fg {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    .plant_fg {
+        position: absolute;
+    }
+    .plant_fg img {
+        position: relative;
+        bottom: -35vh;
+        width: 92vw;
+    }
+    
+    
+    
+    
+    .text_page_1 {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100vh;
+        width: 95vw;
+        margin-left: 5vw;
+    }
+    
+    .top {
+        position: relative;
+        height: auto;
+        width: 300px;
+        color: white;
+        font-size: 18px;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+    }
+    
+    .title {
+        position: relative;
+        height: 45vw;
+        width: 62vw;
+    }
+    
+    .title img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    
+    .page_2 {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #c2d7b3;
+    }
+    
+    .txt {
+        position: relative;
+        width: 72vw;
+        max-width: 740px;
+        height: auto;
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    .txtt {
+        position: relative;
+        width: auto;
+        height: auto;
+        font-size: 28px;
+    }
+    
+    
+    .kitty_basics {
+        height: auto;
+        max-height: 333px;
+        width: 40vw;
+        max-width: 297px;
+    }
+    .kitty_basics img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    
+    .page_3 {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    
+    .text_page3 {
+        position: relative;
+        height: 15vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+    
+    .plant_text, .cat_text {
+        position: relative;
+        width: 30vw;
+        text-align: center;
+        bottom: 0vh;
+    }
+    
+    .pg_3_img {
+        position: relative;
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        bottom: 0vh;
+    }
+    
+    .this_is_plant, .this_is_cat {
+        height: 60vw;
+        width: 30vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        bottom: 0vh;
+    }
+    
+    .this_is_plant img, .this_is_cat img {
+        height: 100%;
+        width: auto;
+        max-height: 600px;
+        max-width: 450px;
+    }
+    
+    .gradient_pg3 {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        opacity: 1;
+        background-image: linear-gradient(150deg, rgb(255, 255, 255), rgba(250, 255, 209, 0.814), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    }
+    
+    .sun_text {
+        position: absolute;
+        font-size: 30px;
+        opacity: 1;
+        bottom: 0vh;
+        text-align: right;
+    }
+    
+    
+    .page_4 {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .pg_4_text {
+        position: relative;
+        width: 80vw;
+        max-width: 600px;
+        height: 35vh;
+        text-align: center;
+        font-size: 1.7em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        transition: ease-in-out 200ms;
+    }
+    
+    .pg_4_images {
+        position: relative;
+        height: 75vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+        line-height: 1px;
+    }
+    
+    .cat {
+        position: absolute;
+        height: 100%;
+        width: 40vw;
+        margin-left: 5vw;
+        display: flex;
+        justify-content: center ;
+        margin-bottom: 8vh;
+    }
+    .cat img {
+        position: absolute;
+        height: 100%;
+        width: fit-content;
+    }
+    
+    .plants_container {
+        position: relative;
+        height: 100%;
+        width: 60vw;
+        max-width: 300px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5vh;
+    }
+    
+    .plants_row {
+        position: relative;
+        display: flex;
+        height: auto;
+        width: 300vw;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .pl {
+        position: relative;
+        width: 60vw;
+        max-width: 300px;
+        height: auto;
+        align-items: flex-end;
+    }
+    
+    .pl img {
+        width: 100%;
+        height: fit-content;
+    }
+    
+    @media only screen and (min-width: 800px) {
+        .pg_4_images {
+            justify-content: space-around;
+        }
+        
+        .cat {
+            position: relative;
+        }
+        
+        .plants_container {
+            max-width: 400px;
+        }
+        
+        .pl {
+            max-width: 400px;
+            padding-bottom: 2vh;
+        }
+    }
+    
+    
+    
+    
+    
+    .page_5 {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .pg_5_text {
+        position: relative;
+        width: 80vw;
+        max-width: 470px;
+        height: 30vh;
+        text-align: center;
+        font-size: 1.8em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        transition: ease-in-out 200ms;
+    }
+    
+    .pg_5_images {
+        position: relative;
+        height: 75vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+        line-height: 1px;
+    }
+    
+    .toxic_cat {
+        position: absolute;
+        height: 100%;
+        width: 90vw;
+        max-width: 500px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        display: flex;
+        justify-content: center ;
+        align-items: flex-end;
+        margin-bottom: 10vh;
+    }
+    .toxic_cat img {
+        position: absolute;
+        height: fit-content;
+        width: 100%;
+    }
+    
+    .toxic_plants_container {
+        position: relative;
+        height: 80vh;
+        width: 38vw;
+        max-width: 250px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 5vh;
+    }
+    
+    .toxic_plants_row {
+        position: relative;
+        display: flex;
+        height: auto;
+        width: 200vw;
+        max-width: 1250px;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .toxic_pl {
+        position: relative;
+        width: 38vw;
+        max-width: 250px;
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .toxic_pl img {
+        width: 97%;
+        height: auto;
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        .pg_5_images {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+        }
+        
+        .toxic_cat {
+            position: relative;
+        }
+        
+        .toxic_plants_container {
+            position: relative;
+            max-width: 250px;
+        }
+        
+        .toxic_pl {
+            position: relative;
+            max-width: 250px;
+        }
+    }
+    
+    
+    .page_6 {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .pg_6_text {
+        position: relative;
+        z-index: 10;
+        width: 80vw;
+        max-width: 450px;
+        height: 30vh;
+        text-align: center;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: ease-in-out 200ms;
+    }
+    
+    .pg_6_text h1 {
+        position: absolute;
+    }
+    
+    .tpc {
+        position: relative;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+    
+    .tpr {
+        position: relative;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+    
+    .tpl img{
+        width: 15vw;
+    }
+    
+    .pg_6_cat {
+        position: relative;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .pg_6_cat img {
+        position: absolute;
+        width: 20vw;
+        height: auto;
+    }
+    
+    
+    
+    
+    .page_7 {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        text-align: center;
+        background-image: linear-gradient(0deg, #6f8360, #c2d7b3);
+    }
+    
+    .page_7 h1 {
+        font-size: 2em;
+        width: 75vw;
+        max-width: 600px;
+        margin-bottom: 20vh;
+    }
+    
+    
+    
+    .footer {
+        position: absolute;
+        height: 18vh;
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer h1 {
+        font-size: 18px;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+    }
+    
+    .footer_cat {
+        position: absolute;
+        width: 70%;
+        max-width: 400px;
+        height: auto;
+        bottom: 0;
+        opacity: 1;
+    }
+    
+}
+

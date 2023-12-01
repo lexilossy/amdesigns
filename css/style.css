@@ -1,0 +1,414 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap'); */
+
+
+* {
+    margin: 0%;
+    font-family: 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+
+ body {
+    overflow-y: scroll;
+    
+ }
+
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.section3 {
+    height: 150vh;
+    background-color: #eaffda50;
+        backdrop-filter: blur(8px);
+        z-index: 10;
+}
+
+.img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+/* .back {
+    background-color: #FCFFE8;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+} */
+
+.behind img {
+    filter: brightness(.9);
+}
+.top {
+    width: 80vw;
+    height: 15vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding-top: 17px;
+}
+
+.backLeaves {
+    opacity: 1;
+    background-color: #EAFFDA;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+}
+
+/* .leftLeaves {
+    /* opacity: .5; 
+
+}
+.rightLeaves {
+     opacity:.5; 
+
+} */
+
+#leftShadow {
+    position: fixed;
+    height: 130vh;
+    width: auto;
+    translate: -33vw 7vw;
+}
+
+#leftBack {
+    position: fixed;
+    height: 130vh;
+    width: auto;
+    translate: -30vw 0vw;
+}
+
+#leftMiddle {
+    display: none;
+}
+
+#leftFront {
+    position: fixed;
+    height: 130vh;
+    width: auto;
+    translate: -30vw 0vw;
+    z-index: 10;
+    
+}
+#leftFrontMiddle {
+    display: none;
+}
+
+#rightShadow {
+    display: none;
+}
+
+#rightBack {
+    display: none;
+}
+
+#rightMiddle {
+    position: fixed;
+    height: 130vh;
+    width: auto;
+    translate: 30vw 5vh;
+}
+
+#rightFront {
+    display: none;
+}
+
+
+
+.name {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 600;
+    overflow-y: hidden;
+}
+
+.container {
+    margin-top: 20vh;
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.self-image {
+    height: 45vw;
+    width: 45vw;
+    max-height: 350px;
+    max-width: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.self-image img {
+    width: 100%;
+    height: auto;
+}
+
+.text-title {
+    margin-top: 3vh;
+    color: #79BDC0;
+    font-size: 28px;
+    font-weight: 500;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+.text {
+    color: #00312C;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 2vh;
+    width: 75%;
+    display: flex;
+    overflow-y: hidden!important;
+}
+
+.about-text{
+    color: #EAFFDA;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 4vh;
+    margin-left: 8vw;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    overflow-y: hidden!important;
+}
+
+.navigation {
+    position: fixed;
+    /* background-color: #EAFFDA; */
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0px;
+}
+
+.navigation p {
+    /* background-color: #EAFFDA; */
+    /* background: radial-gradient(50% 50% at 50% 50%, #EAFFDA50 0%, #00616600 100%); */
+    color: #006166;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 100;
+
+}
+
+.name-hide {
+    display: block;
+}
+
+.name-show { 
+    display: none;
+}
+
+.projects:hover p  {
+    color: #A3F514;
+    transition: ease-in-out 200ms;
+}
+.home:hover p  {
+    color: #A3F514;
+    transition: ease-in-out 200ms;
+}
+.contact:hover p  {
+    color: #A3F514;
+    transition: ease-in-out 200ms;
+}
+.about:hover p  {
+    color: #A3F514;
+    transition: ease-in-out 200ms;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.my-work {
+    position: relative;
+    /* top: 25vh;
+    height: 50vh; */
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    left: 8vw;
+    margin-top: 32px;
+}
+
+.work {
+    position: relative;
+    /* height: 22vw; */
+    width: 22vw;
+    transition: ease-in-out 100ms;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 16px;
+        overflow: hidden;
+
+}
+.work-text {
+    height: 50%;
+    width: 100%;
+    transition: ease-in-out 100ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.work-text p {
+    color: #00312C;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.work-text p:hover {
+    color: #A3F514;
+    transition: ease-in-out 100ms;
+    scale: 2em;
+
+}
+
+.work-image {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;    
+    overflow: hidden;
+
+}
+
+.work-image img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+#green-eel {
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+}
+
+#dante-green {
+    width: auto;
+    height: 90%;
+}
+
+
+
+
+
+
+.contact-info {
+    position: absolute;
+    z-index: 20;
+    height: 60vh;
+    width: 45vw;
+    top: 20vh;
+    right: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.contact-info p {
+    color: #00312C;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.email-me {
+    height: 10vh;
+    width: 45vw;
+}
+
+.linked-in {
+    height: 10vh;
+    width: 45vw;
+}
+
+.cv {
+    height: 10vh;
+    width: 45vw;
+}
+
+.email-me:hover p {
+    color: #79BDC0;
+    transition: ease-in-out 100ms;
+}
+.linked-in:hover p {
+    color: #79BDC0;
+    transition: ease-in-out 100ms;
+}
+
+.cv:hover p {
+    color: #79BDC0;
+    transition: ease-in-out 100ms;
+}
+
+
+
+.contact-image {
+    position: absolute;
+    bottom: 50px;
+    left: 5vw;
+    height: 32vh;
+    width: 32vh;
+    object-fit: cover;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+

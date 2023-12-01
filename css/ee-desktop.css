@@ -1,0 +1,327 @@
+@media only screen and (min-width:610px) {
+
+    .navigation-menu-mobile {
+        display: none;
+
+    }
+
+    .navigation-menu-desktop {
+        display: flex;
+        width: 70%;
+        max-width: 1000px;
+        justify-content: space-around;
+        color: #DF5E36;
+        margin-right: 2%;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 12.5px;
+        -webkit-text-stroke: 1px;
+        padding-left: 10px;
+        transition: all 700ms ease-in-out;
+    }
+
+    .navigation-menu-desktop a{
+        color: #DF5E36;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 12.5px;
+        -webkit-text-stroke: 1px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .navigation-menu-desktop p:hover{
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        text-decoration-color: rgb(251, 255, 0);
+        text-decoration-thickness: 2px;
+        cursor: pointer;
+    }
+
+    .main{
+        height: 800px;
+    }
+        .main-date{
+            margin-top: 190px;
+            transition: all 400ms ease-in-out;
+        }
+
+
+        .main-logo{
+            transition: all 400ms ease-in-out;
+        }
+
+
+        .main-tickets{
+            margin-top: 400px;
+            transition: all 600ms ease-in-out;
+        }
+
+
+        .main-lineup{
+            margin-top: 560px;
+            width: 620px;
+            margin-top: 600px;
+            transition: all 600ms ease-in-out;
+        }
+
+
+        .main-lineup p{
+            font-size: 20px;
+            line-height: 32px;
+            transition: all 600ms ease-in-out;
+        }
+
+
+        .main-lineup p1{
+            padding-right: 10px;
+            transition: all 600ms ease-in-out;
+        }
+
+
+        .main-more{
+            font-size: 16px;
+            margin-top: 750px;
+            transition: all 400ms ease-in-out;
+        }
+
+
+    .subscribe-outer{
+        margin-top: 120px;
+        width: 100%;
+        height: 160px;
+        transition: all 600ms ease-in-out;
+    }
+        .subscribe-box{
+            height: 120px;
+            width: 600px;
+            font-size: 26px;
+            line-height: 55px;
+            transition: all 600ms ease-in-out;
+        }
+            .email-box input {
+                margin-left: 21%;
+                height: 35px;
+                width: 300px;
+                font-size: 14px;
+            }
+
+            .done-box input {
+                margin-left: 39%;
+                font-size: 14px;
+            }
+
+
+    .tile-outer{
+        color: rgb(255, 0, 0);
+        height: 1600px;
+    }
+        .tile-ticket-packages{
+            width: 400px;
+            height: 400px;
+            transition: all 400ms ease-in-out;
+        }
+            .tile-text-ticket-packages{
+                width: 400px;
+                height: 400px;
+            }
+
+
+        .tile-merch{
+            width: 400px;
+            height: 400px;
+            transition: all 400ms ease-in-out;
+        }
+            .tile-text-merch{
+                width: 400px;
+                height: 400px;
+            }
+
+        .tile-radio{
+            width: 400px;
+            height: 400px;
+            transition: all 400ms ease-in-out;
+        }
+            .tile-text-radio{
+                width: 400px;
+                height: 400px;
+            }
+
+
+    .footer{
+        height: 300px;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+        transition: all 400ms ease-in-out;
+    } 
+        .footer img{
+            object-position: 100% 0px;
+        }
+
+
+        .footer-socials{
+            margin-top: 240px;
+            margin-right: 7%;
+            max-width: 300px;
+            align-self: flex-end;
+            transition: all 500ms ease-in-out;
+        }
+
+        
+        .footer-base-box{
+            margin-top: 60px;
+            padding-bottom: 2%;
+            transition: all 400ms ease-in-out;
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+@media only screen and (min-width:900px) {
+    .navigation-menu-desktop {
+        display: flex;
+        width: 70%;
+        max-width: 900px;
+        justify-content: space-around;
+        color: #DF5E36;
+        margin-right: 2%;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 18px;
+        -webkit-text-stroke: 1px;
+        padding-left: 10px;
+        transition: all 700ms ease-in-out;
+    }
+
+    .main{
+        height: 1000px;
+    }
+        .main-tickets{
+            margin-top: 420px;
+            transition: all 600ms ease-in-out;
+        }
+
+
+        .main-lineup{
+            margin-top: 720px;
+            width: 90%;
+            max-width: 900px;
+            transition: all 800ms ease-in-out;
+        }
+
+
+        .main-lineup p{
+            font-size: 26px;
+            line-height: 38px;
+            transition: all 800ms ease-in-out;
+        }
+        
+        
+        .main-lineup p1{
+            padding-left: 20px;
+            padding-right: 20px;
+            transition: all 600ms ease-in-out;
+        }
+        
+        
+        .main-more{
+            font-size: 16px;
+            margin-top: 900px;
+            transition: all 400ms ease-in-out;
+        }
+
+
+    .subscribe-outer{
+        margin-top: 160px;
+        width: 100%;
+        height: 200px;
+        transition: all 600ms ease-in-out;
+    }
+        .subscribe-box{
+            height: 120px;
+            width: 800px;
+            font-size: 30px;
+            -webkit-text-stroke: 1.8px;
+            line-height: 60px;
+            transition: all 600ms ease-in-out;
+        }
+            .email-box input {
+                margin-left: 20%;
+                height: 40px;
+                width: 350px;
+                font-size: 18px;
+            }
+
+            .done-box input {
+                margin-left: 38%;
+                font-size: 16px;
+                width: 110px;
+            }
+
+
+
+    .tile-outer{
+        color: rgb(255, 0, 0);
+        height: 600px;
+        transition: all 400ms ease-in-out;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .tile-ticket-packages{
+        width: 300px;
+        height: 300px;
+        transition: all 600ms ease-in-out;
+    }
+        .tile-text-ticket-packages{
+            font-size: 40px;
+            -webkit-text-stroke: 2px;
+            width: 300px;
+            height: 300px;
+            }
+
+
+    .tile-merch{
+        width: 300px;
+        height: 300px;
+        transition: all 600ms ease-in-out;
+    }
+        .tile-text-merch{
+            font-size: 40px;
+            -webkit-text-stroke: 2px;
+            width: 300px;
+            height: 300px;
+            }
+
+
+    .tile-radio{
+        width: 300px;
+        height: 300px;
+        transition: all 600ms ease-in-out;
+    }
+        .tile-text-radio{
+            font-size: 40px;
+            -webkit-text-stroke: 2px;
+            width: 300px;
+            height: 300px;
+            }
+
+    .footer{
+        height: 320px;
+        transition: all 400ms ease-in-out;
+    } 
+    .footer-socials{
+        margin-top: 250px;
+        transition: all 00ms ease-in-out;
+    }
+
+    
+    .footer-base-box{
+        margin-top: 90px;
+        transition: all 400ms ease-in-out;
+    }
+
+}

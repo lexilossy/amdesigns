@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0%;
+    font-family: 'Rajdhani', sans-serif;
+    overflow: hidden;
+}
+.img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.back {
+    background-color: #FCFFE8;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background {
+    position: fixed;
+    display: flex;
+    height: 120vh;
+    width: 130vw;
+    top: -10vh;
+    left: -10vw;
+}
+.background img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.background-desk {
+    display: none;
+}
+
+.top {
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding-top: 17px;
+}
+
+
+.name {
+    color: #F58549;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+
+.navigation {
+    position: fixed;
+    background-color: #D3DFB8;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0px;
+}
+
+.navigation p {
+    background-color: #D3DFB8;
+    color: #759AAB;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: ease-in-out 100ms;
+}
+
+.contact p  {
+    color: #384D48;
+}
+
+.projects:hover p  {
+    color: #F58549;
+}
+.home:hover p  {
+    color: #F58549;
+}
+.contact:hover p  {
+    color: #F58549;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.contact-info {
+    position: absolute;
+    height: 60vh;
+    width: 45vw;
+    top: 20vh;
+    right: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.contact-info p {
+    color: #384D48;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.email-me {
+    height: 10vh;
+    width: 45vw;
+}
+
+.linked-in {
+    height: 10vh;
+    width: 45vw;
+}
+
+.cv {
+    height: 10vh;
+    width: 45vw;
+}
+
+.email-me:hover p {
+    color: #759AAB;
+    transition: ease-in-out 100ms;
+}
+.linked-in:hover p {
+    color: #759AAB;
+    transition: ease-in-out 100ms;
+}
+
+.cv:hover p {
+    color: #759AAB;
+    transition: ease-in-out 100ms;
+}
+
+
+
+.contact-image {
+    position: absolute;
+    bottom: 50px;
+    left: 5vw;
+    height: 32vh;
+    width: 32vh;
+    object-fit: cover;
+    display: flex;
+}
+
+
+
+@media only screen and (min-width: 800px)  {
+
+    .background {
+        display: none;
+    }
+    
+    .background-desk {
+        position: fixed;
+        display: flex;
+        height: 150vh;
+        width: 150vw;
+        left: -30vw;
+    }
+    
+    .background-desk img {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .top {
+        width: 100vw;
+        height: 20vh;
+        bottom: 8vh;
+        padding-top: 0px;
+    }
+    .name {
+        font-size: 80px;
+        width: 90%;
+    }
+
+
+    .navigation {
+        height: 100vh;
+        width: 22vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        right: 5vw;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .navigation p {
+        font-size: 34px;
+        font-weight: 700;
+        background-color: rgba(255, 255, 255, 0);
+        height: 10vh;
+        padding: 5vh;
+    }
+    
+    
+    .projects:hover p  {
+        color: #F58549;
+        font-size: 2.5em;
+        transition: ease-in-out 200ms;
+    }
+    .home:hover p  {
+        color: #F58549;
+        font-size: 2.5em;
+        transition: ease-in-out 200ms;
+    }
+    .contact:hover p  {
+        color: #F58549;
+        font-size: 2.5em;
+        
+    }
+
+
+
+
+    .contact-info {
+        position: absolute;
+        height: 25vh;
+        width: 55vw;
+        top: 30vh;
+        left: 20vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .contact-info p {
+        color: #384D48;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .email-me {
+        height: 120px;
+        width: 120px;
+        justify-content: center;
+    }
+    
+    .linked-in {
+        height: 120px;
+        width: 120px;
+        justify-content: center;
+    }
+    
+    .cv {
+        height: 120px;
+        width: 120px;
+        justify-content: center;
+    }
+    
+    .email-me:hover p {
+        color: #F58549;
+        transition: ease-in-out 150ms;
+    }
+    .linked-in:hover p {
+        color: #F58549;
+        transition: ease-in-out 150ms;
+    }
+    
+    .cv:hover p {
+        color: #F58549;
+        transition: ease-in-out 150ms;
+    }
+
+    
+    
+    
+    .contact-image {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 55vh;
+        width: 55vh;
+        object-fit: cover;
+        display: flex;
+    }
+
+}
+
+
+

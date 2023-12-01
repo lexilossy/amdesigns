@@ -1,0 +1,563 @@
+*{
+    margin: 0%;
+}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    overflow: scroll;
+}
+
+
+.background-image{
+    position: fixed;
+    opacity: 80%;
+    z-index: 0;
+}
+
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+}
+
+
+
+.navigation{
+    background-color: rgba(0, 0, 0, 0.63);
+    width: 100%;
+    height: 10vw;
+    max-height: 80px;
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+}
+
+    .navigation-logo{
+        color: #0085FF;
+        margin-left: 5%;
+        width: auto;
+        height: 80%;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+
+    .navigation-menu-mobile{
+        color: rgb(57, 57, 121);
+        margin-right: 5%;
+        width: 35px;
+        height: 35px;
+        z-index: 10;
+        cursor: pointer;
+        transition: all 100ms ease-in-out;
+    }
+    .navigation-menu-mobile:hover{
+        transform: scale(1.2);
+    }
+
+    .navigation-menu-desktop{
+        display: none;
+    }
+
+
+.main{
+    color: rgb(58, 155, 58);
+    width: 100%;
+    height: 800px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+    .main-date{
+        color: #0085FF;
+        margin-top: 180px;
+        width: 200px;
+        height: 20px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 18px;
+        -webkit-text-stroke: 1.5px;
+    }
+
+    .main-logo{
+        color: rgb(251, 255, 0);
+        margin-top: 250px;
+        width: 75%;
+        max-width: 700px;
+        height: auto;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        transition: all 400ms ease-in-out;
+    }
+
+
+    .main-tickets{
+        background-color: #DF5E36;
+        color: black;
+        width: 125px;
+        height: 30px;
+        margin-top: 350px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 20px;
+        -webkit-text-stroke: 1px;
+        opacity: 85%;
+        cursor: pointer;
+        transition: all 600ms ease-in-out;
+    }
+        .main-tickets :hover{
+            color: white;
+            -webkit-text-stroke: 1.7px;
+        }
+
+    .main-lineup{
+        color: #FFE600;
+        width: 440px;
+        height: auto;
+        max-height: 100px;
+        margin-top: 550px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: all 600ms ease-in-out;
+    }
+
+.main-lineup p{
+    color: #FFE600;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 16px;
+    line-height: 26px;
+    -webkit-text-stroke: 1px;
+    transition: all 600ms ease-in-out;
+}
+
+.main-lineup p1{
+    color:#df5d3600;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: all 600ms ease-in-out;
+}
+
+    .main-more{
+        color: #DF5E36;
+        width: 70px;
+        height: 15px;
+        margin-top: 700px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 14px;
+        -webkit-text-stroke: 1px;
+        cursor: pointer;
+    }
+    .main-more p{
+        color: #DF5E36;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 14px;
+        text-decoration: underline black;
+        -webkit-text-stroke: 1px;
+    }
+        .main-more :hover{
+            -webkit-text-stroke: 1.7px;
+            font-size: 16px;
+        }
+
+
+.subscribe-outer{
+    color: blanchedalmond;
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    transition: all 600ms ease-in-out;
+}
+    .subscribe-box{
+        color: #0085FF;
+        height: 100px;
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 20px;
+        -webkit-text-stroke: 2px;
+        line-height: 45px;
+        transition: all 600ms ease-in-out;
+    }
+
+        .email-box input {
+            margin-left: 27%;
+            color: #ffffff;
+            height: 30px;
+            width: 200px;
+            font-family: 'Major Mono Display', monospace;
+            font-size: 12px;
+            -webkit-text-stroke: 1.3px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.26);
+        }
+
+        .done-box input {
+            margin-left: 39%;
+            color: #DF5E36;
+            height: 16px;
+            width: 100px;
+            font-family: 'Major Mono Display', monospace;
+            font-size: 10px;
+            -webkit-text-stroke: 1.3px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+        }
+        .done-box input:hover{
+            transform: scale(1.1);
+            color: #FFE600;
+            transition: all 200ms ease-in-out;
+        }
+
+.tile-outer{
+    color: rgb(255, 0, 0);
+    width: 100%;
+    height: 1100px;
+    margin-top: 80px;
+    position:relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: all 600ms ease-in-out;
+}
+    .tile-ticket-packages{
+        color: rgb(255, 111, 111);
+        width: 300px;
+        height: 300px;
+        transition: all 600ms ease-in-out;
+    }
+    .tile-ticket-packages:hover img{
+        filter: blur(8px);
+    }
+        .ticket-packages-container{
+            color: blanchedalmond;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            transition: all 600ms ease-in-out;
+            cursor: pointer;
+        }
+            .tile-text-ticket-packages{
+                opacity: 0;
+                z-index: 20;
+                position: absolute;
+                color: #0085FF;
+                font-family:'Major Mono Display', monospace;
+                font-size: 40px;
+                -webkit-text-stroke: 2px;
+                line-height: 60px;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column wrap;
+                width: 300px;
+                height: 300px;
+                display: flex;
+                transition: all 400ms ease-in-out;
+                cursor: pointer;
+            }
+
+            .tile-text-ticket-packages:hover{
+                opacity: 1;
+            }
+
+
+
+    .tile-merch{
+        color: rgb(119, 0, 0);
+        width: 300px;
+        height: 300px;
+        transition: all 600ms ease-in-out;
+    }
+    .tile-merch:hover img{
+        filter: blur(8px);
+    }
+        .ticket-packages-container{
+            color: blanchedalmond;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            transition: all 600ms ease-in-out;
+            cursor: pointer;
+        }
+            .tile-text-merch{
+                opacity: 0;
+                z-index: 10;
+                position: absolute;
+                color: #FFE600;
+                font-family:'Major Mono Display', monospace;
+                font-size: 40px;
+                -webkit-text-stroke: 2px;
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 400ms ease-in-out;
+                cursor: pointer;
+            }
+            .tile-text-merch:hover{
+                opacity: 1;
+            }
+
+
+    .tile-radio{
+        color: rgb(128, 60, 60);
+        width: 300px;
+        height: 300px;
+        transition: all 600ms ease-in-out;
+    }
+    .tile-radio:hover img{
+        filter: blur(8px);
+    }
+    .radio-container{
+            color: blanchedalmond;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            transition: all 600ms ease-in-out;
+            cursor: pointer;
+        }
+        .tile-text-radio{
+            opacity: 0;
+            z-index: 10;
+            position: absolute;
+            color: #DF5E36;
+            font-family:'Major Mono Display', monospace;
+            font-size: 40px;
+            -webkit-text-stroke: 2px;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 400ms ease-in-out;
+            cursor: pointer;
+        }
+        .tile-text-radio:hover{
+            opacity: 1;
+        }
+
+
+
+    .footer{
+        color: rgb(255, 255, 255);
+        width: 100%;
+        height: auto;
+        position:relative;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 400ms ease-in-out;
+    }
+        .footer-socials{
+            position: absolute;
+            margin-top: 60px;
+            color: rgb(247, 0, 255);
+            width: 85%;
+            height: 35px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            transition: all 500ms ease-in-out;
+        }
+        .footer-socials-facebook{
+            color: rgb(250, 102, 255);
+            width: 30px;
+            height: 30.5px;
+            cursor: pointer;
+        }
+            .footer-socials-facebook:hover{
+                color: #DF5E36;
+                
+            }
+            .footer-socials-facebook:hover{
+                transform: scale(1.15);
+                transition: all .2s ease-in-out
+            }
+
+        .footer-socials-twitter{
+            color: rgb(252, 161, 255);
+            width: 30px;
+            height: 28px;
+            cursor: pointer;
+        }
+        .footer-socials-twitter:hover{
+            transform: scale(1.15);
+            transition: all .2s ease-in-out
+        }
+
+        .footer-socials-instagram{
+            color: rgb(163, 117, 165);
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .footer-socials-instagram:hover{
+            transform: scale(1.15);
+            transition: all .2s ease-in-out
+        }
+
+        .footer-socials-tiktok{
+            color: rgb(116, 84, 117);
+            width: 25.5px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .footer-socials-tiktok:hover{
+            transform: scale(1.15);
+            transition: all .2s ease-in-out
+        }
+
+        .footer-socials-youtube{
+            color: rgb(107, 55, 109);
+            margin-top: .75%;
+            width: 32px;
+            height: 24px;
+            cursor: pointer;
+        }
+        .footer-socials-youtube:hover{
+            transform: scale(1.15);
+            transition: all .2s ease-in-out
+        }
+
+        .footer-socials-mail{
+            color: rgb(97, 0, 100);
+            margin-top: 1%;
+            width: 30px;
+            height: 24px;
+            cursor: pointer;
+        }
+        .footer-socials-mail:hover{
+            transform: scale(1.15);
+            transition: all .2s ease-in-out
+        }
+
+    
+    .footer-base-box{
+        color: rgb(0, 139, 139);
+        position: absolute;
+        margin-top: 140px;
+        width: 85%;
+        height: 140px;
+        display: flex;
+        justify-content: space-between; 
+        transition: all 400ms ease-in-out;   
+    }
+        .footer-logo{
+            color: rgb(0, 238, 255);
+            width: 185px;
+            height: 85px;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+    
+        .footer-index{
+            color: #0085FF;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 160px;
+            height: 140px;
+            font-family: Arial;
+            font-size: 12px;
+            line-height: 30px;
+        }
+
+        .footer-index p{
+            cursor: pointer;
+        }
+            .footer-index p :hover{
+                color: #FFE600;
+                transition: 1s;
+            }
+
+
+    .mobile-menu-background{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        overflow: hidden;
+        display: none;
+        position: absolute;
+        z-index: 100;
+        transition: all 400ms ease-in-out;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+        .mobile-menu-close{
+            width: 50px;
+            height: 50px;
+            padding: 20px;
+            color:#0085FF;
+            font-family:'Major Mono Display', monospace;
+            font-size: 40px;
+            -webkit-text-stroke: 5px;
+            position: relative;
+            cursor: pointer;
+        }
+.mobile-menu-close:hover{
+    color:#FFE600;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 400ms ease-in-out;
+}
+
+
+        .mobile-menu-contents{
+            position: relative;
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+            margin-right: 40px;
+            color: #DF5E36;
+            font-family:'Major Mono Display', monospace;
+            font-size: 24px;
+            -webkit-text-stroke: 1.2px;
+            line-height: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            transition: all 400ms ease-in-out;
+        }
+        .mobile-menu-contents a{
+            color: #DF5E36;
+            font-family:'Major Mono Display', monospace;
+            font-size: 24px;
+            -webkit-text-stroke: 1.2px;
+            text-decoration: none;
+            line-height: 60px;
+        }
+.mobile-menu-contents p:hover{
+    color:#FFE600;
+    cursor: pointer;
+    -webkit-text-stroke: 1.3px;
+    transition: all 400ms ease-in-out;
+}

@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0%;
+    font-family: 'Rajdhani', sans-serif;
+    overflow: hidden;
+}
+.img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.back {
+    background-color: #FCFFE8;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background {
+    position: fixed;
+    display: flex;
+    height: 120vh;
+    width: 130vw;
+    top: -10vh;
+    left: -10vw;
+}
+.background img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.background-desk {
+    display: none;
+}
+
+.top {
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 17px;
+}
+
+
+.name {
+    color: #F58549;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+
+.navigation {
+    position: fixed;
+    background-color: #D3DFB8;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0px;
+}
+
+.navigation p {
+    background-color: #D3DFB8;
+    color: #759AAB;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: ease-in-out 100ms;
+}
+
+.projects p  {
+    color: #384D48;
+}
+
+.projects:hover p  {
+    color: #F58549;
+}
+.home:hover p  {
+    color: #F58549;
+}
+.contact:hover p  {
+    color: #F58549;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.my-work {
+    position: absolute;
+    top: 25vh;
+    height: 50vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    left: 10vw;
+}
+
+.work {
+    position: relative;
+    height: 22vw;
+    width: 22vw;
+    transition: ease-in-out 100ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.work-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    transition: ease-in-out 100ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.work-text p {
+    color: #384D48;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.work-text p:hover {
+    color: #F58549;
+    transition: ease-in-out 100ms;
+    scale: 2em;
+
+}
+
+.work-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-image img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+#green-eel {
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+}
+
+#dante-green {
+    width: auto;
+    height: 90%;
+}
+
+@media only screen and (min-width: 800px)  {
+    .background {
+        display: none;
+    }
+    
+    .background-desk {
+        position: fixed;
+        display: flex;
+        height: 150vh;
+        width: 150vw;
+        left: -30vw;
+    }
+    
+    .background-desk img {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .top {
+        width: 100vw;
+        height: 20vh;
+        bottom: 8vh;
+        padding-top: 0px;
+    }
+    .name {
+        font-size: 80px;
+        width: 90%;
+    }
+
+    .my-work {
+        position: absolute;
+        top: 25vh;
+        height: 45vh;
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .work {
+        position: relative;
+        height: 15vw;
+        max-height: 150px;
+        width: 15vw;
+        max-width: 150px;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        transition: ease-in-out 100ms;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .work p {
+        color: #384D48;
+        font-size: 22px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+
+    .navigation {
+        height: 100vh;
+        width: 22vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        right: 5vw;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .navigation p {
+        font-size: 34px;
+        font-weight: 700;
+        background-color: rgba(255, 255, 255, 0);
+        height: 10vh;
+        padding: 5vh;
+    }
+    
+    
+    .projects:hover p  {
+        color: #F58549;
+        font-size: 2.5em;
+        transition: ease-in-out 200ms;
+    }
+    .home:hover p  {
+        color: #F58549;
+        font-size: 2.5em;
+        transition: ease-in-out 200ms;
+    }
+    .contact:hover p  {
+        color: #F58549;
+        font-size: 2.5em;
+        transition: ease-in-out 200ms;
+    }
+
+
+    .work-text p:hover {
+        color: #F58549;
+        font-weight: 700;
+        transition: ease-in-out 150ms;
+    }
+
+}
+
+
+
