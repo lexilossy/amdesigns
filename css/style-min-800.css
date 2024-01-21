@@ -1,5 +1,21 @@
 
+
 @media only screen and (min-width: 800px)  {
+.mobile-back {
+    display: none;
+}
+#leftFront, #leftShadow,  #rightShadow, #rightFront, #leftBack  ,#rightMiddle, #rightBack,  #leftMiddle, #leftFrontMiddle, #leftFrontMiddleOne, #leftFrontOne {
+    display: block;
+}
+
+    .backLeaves {
+        /* opacity: 0.5; */
+        /* filter: saturate(90%) sepia(10%) brightness(125%); */
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+    }
     .rightLeaves {
         position: absolute;
         right: 35%;
@@ -12,7 +28,7 @@
     position: absolute;
     left: -30%;
     top: 0;
-    width: 100vw;
+    width: 90vw;
     object-fit: fill;
 }
 #leftShadow {
@@ -20,7 +36,7 @@
     position: fixed;
     height: 130vh;
     width: auto;
-    translate: -33vw 7vw;
+    translate: -45% 10vh;
 }
 
 #leftBack {
@@ -28,8 +44,8 @@
     position: fixed;
     height: 130vh;
     width: auto;
-    translate: -30vw 0vw;
-    transition: ease-in-out 70ms;
+    translate: -50% 0vw;
+    /* transition: ease-in-out 70ms; */
 }
 
 #leftMiddle {
@@ -37,8 +53,8 @@
     position: fixed;
     height: 130vh;
     width: auto;
-    translate: -30vw 0vw;
-    transition: ease-in-out 80ms;
+    translate: -50% 0vw;
+    /* transition: ease-in-out 80ms; */
 }
 
 #leftFront {
@@ -46,18 +62,41 @@
     position: fixed;
     height: 130vh;
     width: auto;
-    translate: -30vw 0vw;
+    translate: -50% 0vw;
     z-index: 10;
-    transition: ease-in-out 100ms;
+    /* transition: ease-in-out 100ms; */
 }
 #leftFrontMiddle {
     display: block;
     position: fixed;
     height: 130vh;
     width: auto;
-    translate: -30vw 0vw;
+    translate: -50% 0vw;
     z-index: 1;
-    transition: ease-in-out 90ms;
+    /* transition: ease-in-out 90ms; */
+}
+
+#leftFrontOne {
+    display: block;
+    position: fixed;
+    height: 130vh;
+    width: auto;
+    translate: -50% 0vw;
+    z-index: 10;
+    /* filter: saturate(170%) grayscale(60%) brightness(110%);    */
+     /* opacity: 0.5; */
+    /* transition: ease-in-out 100ms; */
+}
+#leftFrontMiddleOne {
+    display: block;
+    position: fixed;
+    height: 130vh;
+    width: auto;
+    translate: -50% 0vw;
+    z-index: 1;
+    /* filter: saturate(170%) grayscale(60%) brightness(110%); */
+        /* opacity: 0.5; */
+    /* transition: ease-in-out 90ms; */
 }
 
 #rightShadow {
@@ -66,7 +105,7 @@
     height: 130vh;
     width: auto;
     translate: 0% 5%;
-    translate: 30vw 10vh;
+    translate: 50% 10vh;
 }
 
 #rightBack {
@@ -74,8 +113,8 @@
     position: fixed;
     height: 130vh;
     width: auto;
-    translate: 30vw 5vh;
-    transition: ease-in-out 70ms;
+    translate: 50% 5vh;
+    /* transition: ease-in-out 70ms; */
 }
 
 #rightMiddle {
@@ -83,8 +122,8 @@
     position: fixed;
     height: 130vh;
     width: auto;
-    translate: 30vw 5vh;
-    transition: ease-in-out 80ms;
+    translate: 50% 5vh;
+    /* transition: ease-in-out 80ms; */
 }
 
 #rightFront {
@@ -92,61 +131,85 @@
     position: fixed;
     height: 130vh;
     width: auto;
-    translate: 35vw 5vh;
+    translate: 60% 5vh;
         z-index: 5;
-        transition: ease-in-out 100ms;
+        /* transition: ease-in-out 100ms; */
 }
 
 
 
 .top {
-    width: 80vw;
-    height: 20vh;
-    bottom: 8vh;
+    width: 50vw;
+    height: 10vw;
+    bottom: 2vh;
     padding-top: 0px;
+
 }
 
 
 .container {
-    margin-top: 20vh;
-    width: 60vw;
+    position: absolute;
+    left: 10vw;
+    margin-top: 10vh;
+    width: 70vw;
     max-height: 400px;
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     text-align: left;
-    left: 8vw;
+    gap: 32px;
+    
 }
 
+.cont-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 
     .self-image {
-        position: absolute;
-        left: 0;
-        height: 35vw;
-        width: 35vw;
+        position: relative;
+        height: 25vw;
+        width: 25vw;
         max-height: 370px;
         max-width: 370px;
     }
 
     .text-title {
-        width: 45%;
-        font-size: 32px;
+        width: 100%;
+        font-size: 2rem;
         color: #00312C;
-        justify-content: flex-start;
+        justify-content: flex-end;
     }
 
     .text {
         color: #00312C;
         font-weight: 400;
-        margin-top: 2vh;
-        width: 45%;
+        margin-top: 1.5rem;
+        width: 100%;
         font-size: 22px;
     }
 
+    .about-text{
+        color: #EAFFDA;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: 4vh!important;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        overflow-y: hidden!important;
+    }
+    
+
 
     .navigation {
+        background-color: #EAFFDA00;
         height: 100vh;
         width: auto;
         display: flex;
@@ -165,22 +228,18 @@
     
      .projects:hover p  {
             color: #A3F514;
-            font-size: 2.3em;
             transition: ease-in-out 300ms;
         }
         .home:hover p  {
             color: #A3F514;
-            font-size: 2.5em;
             transition: ease-in-out 300ms;
         }
         .about:hover p  {
             color: #A3F514;
-            font-size: 2.5em;
             transition: ease-in-out 300ms;
         }
         .contact:hover p  {
             color: #A3F514;
-            font-size: 2.5em;
             transition: ease-in-out 300ms;
         }
 
@@ -198,7 +257,7 @@
     
     .work {
         position: relative;
-        height: 12vw;
+        height: 30vh;
         max-height: 200px;
         width: 12vw;
         max-width: 200px;
@@ -209,32 +268,19 @@
         text-align: center;
     }
     
-    .work p {
+    .work text {
         color: #00312C;
-        font-size: 22px;
+        font-size: 1.25rem;
         font-weight: 600;
         cursor: pointer;
         text-decoration: none;
-        padding: 10px;
+        overflow: visible;
     }
 
+    .p2 {
+        margin-bottom: 32vh;
+    }
 
-    .background {
-        display: none;
-    }
-    
-    .background-desk {
-        position: fixed;
-        display: flex;
-        height: 150vh;
-        width: 150vw;
-        left: -30vw;
-    }
-    
-    .background-desk img {
-        height: fit-content;
-        width: 100%;
-    }
 
 
 
@@ -261,7 +307,6 @@
         font-size: 22px;
         font-weight: 600;
         text-align: center;
-        padding: 10px;
     }
     
     .email-me {
@@ -296,35 +341,30 @@
         transition: ease-in-out 150ms;
     }
 
-    
-    
-    
-    .contact-image {
+    .name {
         position: absolute;
-        bottom: 0px;
-        left: 0px;
-        height: 55vh;
-        width: 55vh;
-        object-fit: cover;
+        height: 100%;
         display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 42px;
+        font-weight: 600;
+        overflow-y: hidden;
     }
 
-    .background {
-        display: none;
-    }
-    
-    .background-desk {
+
+}
+
+@media only screen and (min-width: 1000px)  {
+    .backLeaves {
+        opacity: 1;
+        height: 100vh;
+        width: 100vw;
         position: fixed;
-        display: flex;
-        height: 150vh;
-        width: 150vw;
-        left: -30vw;
-    }
-    
-    .background-desk img {
-        height: fit-content;
-        width: 100%;
+        z-index: -1;
     }
 
-
+    #leftFrontMiddleOne, #leftFrontOne {
+        opacity: 1;
+    }
 }

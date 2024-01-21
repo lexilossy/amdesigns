@@ -21,13 +21,21 @@ document.getElementById('scrollContact').addEventListener('click', function (e) 
   // Scroll smoothly to the target div
   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 });
+
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 
 ScrollTrigger.defaults({
   toggleActions: "play resume restart reset",
-  scroller: "body",
-  markers: true,
+  scroller: ".sections-outer",
+  markers: false,
+  end: "0 95%"
+  // pin: true,
+  // pinSpacing: false,
+  // scrub: true,
 
 });
 
@@ -39,22 +47,29 @@ let tl4 = gsap.timeline({ scrollTrigger: ".section4" });
 
 
 
-tl1
+tl1 
   .from("#leftShadow", { scale: 0.8, xPercent: -3, yPercent: 1, rotate: "-10deg", duration: .6 }, ".4")
   .from("#leftBack", { scale: 0.8, xPercent: -5, yPercent: 3, rotate: "-10deg", duration: .6 }, ".4")
   .from("#leftMiddle", { scale: 0.8, xPercent: -10, yPercent: 5, rotate: "-10deg", duration: .7 }, ".3")
   .from("#leftFrontMiddle", { scale: 0.8, xPercent: -15, yPercent: 7, rotate: "-10deg", duration: .8 }, ".2")
   .from("#leftFront", { scale: 0.8, xPercent: -20, yPercent: 10, rotate: "-10deg", duration: .8 }, ".2")
 
+  .from("#leftFrontMiddleOne", { scale: 0.8, xPercent: -15, yPercent: 7, rotate: "-10deg", duration: .8 }, ".2")
+  .from("#leftFrontOne", { scale: 0.8, xPercent: -20, yPercent: 10, rotate: "-10deg", duration: .8 }, ".2")
+
   .from("#rightShadow", { scale: 0.8, xPercent: 3, yPercent: 1, rotate: "10deg", duration: .6 }, ".4")
   .from("#rightBack", { scale: 0.8, xPercent: 5, yPercent: 3, rotate: "10deg", duration: .6 }, ".4")
   .from("#rightMiddle", { scale: 0.8, xPercent: 10, yPercent: 10, rotate: "10deg", duration: .7 }, ".3")
   .from("#rightFront", { scale: 0.8, xPercent: 15, yPercent: 7, rotate: "10deg", duration: .8 }, ".2")
 
-  .to(".home p", { color: "#A3F514" }, "0.1")
-  .to(".about p", { color: "#79BDC0" }, "0.1")
-  .to(".projects p", { color: "#79BDC0" }, "0.1")
-  .to(".contact p", { color: "#79BDC0" }, "0.1")
+  .to(".home p", { color: "#00312C"}, "0.1")
+  .to(".about p", { color: "#006166" }, "0.1")
+  .to(".projects p", { color: "#006166" }, "0.1")
+  .to(".contact p", { color: "#006166" }, "0.1")
+
+  .to(".name-show", {  start: "0 0%",  end: "0 bottom", display: 'none'})
+  .to(".name-hide", {  start: "0 0%",  end: "0 bottom", display: 'block'})
+  // .to(".name", {  fill: '#EAFFDA'})
   
   .from(".self-image", { scale: 0.8}, {ease: "circ.out", scale: 1, duration: 2 }, ".1");
 
@@ -63,8 +78,8 @@ tl2
   // .to(".section2", {})
   // .fromTo(".name-hide", { display: 'block'}, { display: 'none'}, "0")
   // .fromTo(".name-show", { display: 'none'}, { display: 'block'}, "0");
-  .set(".name-hide", { start: "0 80%", end: "0 bottom", display: 'none'})
-  .set(".name-show", { start: "0 80%", end: "0 bottom", display: 'block'})
+  .to(".name-hide", { start: "0 80%", end: "0 bottom", display: 'none'})
+  .to(".name-show", { start: "0 80%", end: "0 bottom", display: 'block'})
 
   .to(".home p", { start: "0 80%", end: "0 bottom", color: "#79BDC0" }, "0.1")
   .to(".about p", { start: "0 80%", end: "0 bottom", color: "#A3F514" }, "0.2")
@@ -77,44 +92,44 @@ tl2
       //   start: "0 80%",
       //   end: "0 bottom",
       //   onEnter: () => {
-      //   .set(".name-hide", { display: 'none'}),
-      //   .set(".name-show", { display: 'block'})
+      //   .to(".name-hide", { display: 'none'}),
+      //   .to(".name-show", { display: 'block'})
       //   },
       //   onEnterBack: () => {
-      //     .set(".name-hide", {display: 'none'}),
-      //     .set(".name-show", {display: 'block'})
+      //     .to(".name-hide", {display: 'none'}),
+      //     .to(".name-show", {display: 'block'})
       //     },
       //     onLeave: () => {
-      //       .set(".name-show", {display: 'none'}),
-      //       .set(".name-hide", {display: 'block'})
+      //       .to(".name-show", {display: 'none'}),
+      //       .to(".name-hide", {display: 'block'})
       //       },
       //       onLeaveBack: () => {
-      //         .set(".name-show", {display: 'none'}),
-      //         .set(".name-hide", {display: 'block'})
+      //         .to(".name-show", {display: 'none'}),
+      //         .to(".name-hide", {display: 'block'})
       //         }
       // });
      
 tl3
-      // .to(".section3", { start: "0 80%", end: "0 bottom" })
+      .to(".section3", { start: "0 80%", end: "0 bottom", pin: true, scrub: true })
 
-  .set(".name-show", { start: "0 0", end: "bottom bottom", display: 'none'})
-  .set(".name-hide", { start: "0 0", end: "bottom bottom", display: 'block'})
+  .to(".name-show", {  display: 'none'})
+  .to(".name-hide", {  display: 'block'})
   
 
-  .to(".home p", { color: "#79BDC0" }, "0.1")
-  .to(".about p", { color: "#79BDC0" }, "0.1")
+  .to(".home p", { color: "#006166" }, "0.1")
+  .to(".about p", { color: "#006166" }, "0.1")
   .to(".projects p", { color: "#A3F514" }, "0.2")
-  .to(".contact p", { color: "#79BDC0" }, "0.1");
+  .to(".contact p", { color: "#006166" }, "0.1");
 
 
 tl4
   .to(".section4", { start: "0 80%", end: "0 bottom"})
-  .set(".name-show", { start: "0 0", end: "bottom bottom", display: 'none'})
-  .set(".name-hide", { start: "0 0", end: "bottom bottom", display: 'block'})
+  .to(".name-show", {  display: 'none'})
+  .to(".name-hide", {  display: 'block'})
   
-  .to(".home p", { color: "#79BDC0" }, "0.1")
-  .to(".about p", { color: "#79BDC0" }, "0.1")
-  .to(".projects p", { color: "#79BDC0" }, "0.1")
+  .to(".home p", { color: "#006166" }, "0.1")
+  .to(".about p", { color: "#006166" }, "0.1")
+  .to(".projects p", { color: "#006166" }, "0.1")
   .to(".contact p", { color: "#A3F514" }, "0.2");
 
 
@@ -142,6 +157,12 @@ const leftLeafFrontMiddle = document.getElementById('leftFrontMiddle');
 const leftLeafFrontMiddleStyle = leftLeafFrontMiddle.style;
 const leftLeafFront = document.getElementById('leftFront');
 const leftLeafFrontStyle = leftLeafFront.style;
+
+const leftLeafFrontMiddleOne = document.getElementById('leftFrontMiddleOne');
+const leftLeafFrontMiddleStyleOne = leftLeafFrontMiddleOne.style;
+const leftLeafFrontOne = document.getElementById('leftFrontOne');
+const leftLeafFrontStyleOne = leftLeafFrontOne.style;
+
 const rightLeafFront = document.getElementById('rightFront');
 const rightLeafFrontStyle = rightLeafFront.style;
 
@@ -158,6 +179,10 @@ document.addEventListener('mousemove', e => {
     leftLeafFrontMiddleStyle.left = `${(e.clientX /250) * -1 }%`;
     leftLeafFrontStyle.top = `${ (e.clientY /100) * -1}%`;
     leftLeafFrontStyle.left = `${(e.clientX /100) * -1 }%`;
+    leftLeafFrontMiddleStyleOne.top = `${ (e.clientY /250) * -1}%`;
+    leftLeafFrontMiddleStyleOne.left = `${(e.clientX /250) * -1 }%`;
+    leftLeafFrontStyleOne.top = `${ (e.clientY /100) * -1}%`;
+    leftLeafFrontStyleOne.left = `${(e.clientX /100) * -1 }%`;
 
     rightShadowStyle.top = `${(e.clientY /1000) * -1 }%`;
     rightShadowStyle.right = `${ (e.clientX /1000)}%`;

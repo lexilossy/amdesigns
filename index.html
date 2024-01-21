@@ -27,36 +27,70 @@
     ></script>
 
     <title>A M Designs</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8P9JZGTH3N"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8P9JZGTH3N");
+    </script>
   </head>
 
   <body>
     <div class="behind" style="position: absolute">
-      <div class="backLeaves"></div>
-      <div class="leftLeaves">
-        <img id="leftShadow" src="img/leaves/leftShadow.png" alt="leftShadow" />
-        <img id="leftBack" src="img/leaves/leftBack.png" alt="leftBack" />
-        <img id="leftMiddle" src="img/leaves/leftMiddle.png" alt="leftMiddle" />
-        <img
-          id="leftFrontMiddle"
-          src="img/leaves/leftFrontMiddle.png"
-          alt="leftFrontMiddle"
-        />
-        <img id="leftFront" src="img/leaves/leftFront.png" alt="leftFront" />
+      <div class="backLeaves">
+        <div class="leftLeaves">
+          <img
+            id="leftShadow"
+            src="img/leaves/leftShadow.png"
+            alt="leftShadow"
+          />
+          <img id="leftBack" src="img/leaves/leftBack.png" alt="leftBack" />
+          <img
+            id="leftMiddle"
+            src="img/leaves/leftMiddle.png"
+            alt="leftMiddle"
+          />
+          <img
+            id="leftFrontMiddle"
+            src="img/leaves/leftFrontMiddle.png"
+            alt="leftFrontMiddle"
+          />
+          <img id="leftFront" src="img/leaves/leftFront.png" alt="leftFront" />
+        </div>
+        <div class="rightLeaves">
+          <img
+            id="rightShadow"
+            src="img/leaves/rightShadow.png"
+            alt="rightShadow"
+          />
+          <img id="rightBack" src="img/leaves/rightBack.png" alt="rightBack" />
+          <img
+            id="rightMiddle"
+            src="img/leaves/rightMiddle.png"
+            alt="rightMiddle"
+          />
+          <img
+            id="rightFront"
+            src="img/leaves/rightFront.png"
+            alt="rightFront"
+          />
+        </div>
       </div>
-      <div class="rightLeaves">
-        <img
-          id="rightShadow"
-          src="img/leaves/rightShadow.png"
-          alt="rightShadow"
-        />
-        <img id="rightBack" src="img/leaves/rightBack.png" alt="rightBack" />
-        <img
-          id="rightMiddle"
-          src="img/leaves/rightMiddle.png"
-          alt="rightMiddle"
-        />
-        <img id="rightFront" src="img/leaves/rightFront.png" alt="rightFront" />
-      </div>
+    </div>
+    <div class="mobile-back">
+      <img id="leftBackMobile" src="img/leaves/leftBack.png" alt="leftBack" />
+      <img
+        id="rightMiddleMobile"
+        src="img/leaves/rightMiddle.png"
+        alt="rightMiddle"
+      />
     </div>
     <div class="fronttt" style="position: absolute">
       <div class="navigation" style="z-index: 100">
@@ -74,313 +108,255 @@
         </div>
       </div>
       <div class="top">
-        <div class="name name-show">
-          <svg
-            style="height: 100%"
-            viewBox="0 0 9418 1994"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M984.957 0L1498.22 1357.31L2031.36 0H2248.23V1548.89H2100.03V209.651H2096.42L1566.89 1547.08H1427.73L919.896 209.651H916.281V1547.08H768.086V0H984.957Z"
-              fill="#EAFFDA"
-            />
-            <path
-              d="M3730.18 1178.39C3744.64 1230.8 3766.32 1277.79 3797.05 1321.17C3827.77 1364.54 3865.72 1397.07 3912.71 1425.99C3959.7 1453.1 4013.92 1467.56 4078.98 1467.56C4178.38 1467.56 4256.09 1442.26 4313.92 1389.85C4369.95 1337.43 4409.71 1268.75 4431.39 1182H4568.75C4539.83 1308.51 4487.42 1407.92 4409.71 1476.6C4331.99 1545.28 4223.56 1581.42 4080.79 1581.42C3992.23 1581.42 3916.33 1565.16 3851.26 1534.43C3786.2 1503.71 3733.79 1460.33 3694.03 1406.11C3654.27 1351.89 3623.55 1288.63 3603.67 1218.15C3583.79 1145.85 3574.75 1071.75 3574.75 992.23C3574.75 918.13 3583.79 845.836 3603.67 775.35C3623.55 704.863 3652.47 641.607 3694.03 585.579C3733.79 529.552 3786.2 484.368 3851.26 451.836C3916.33 419.304 3992.23 401.23 4080.79 401.23C4169.34 401.23 4247.05 419.304 4310.31 455.451C4373.56 491.597 4425.97 538.588 4465.73 598.23C4505.49 656.065 4534.41 724.744 4550.67 800.652C4568.75 876.561 4575.97 954.276 4572.36 1031.99H3712.11C3712.11 1080.79 3719.33 1131.4 3731.99 1185.62L3730.18 1178.39ZM4406.09 760.891C4389.83 713.9 4366.33 670.524 4335.61 634.377C4304.89 598.23 4268.74 567.506 4225.37 545.818C4181.99 524.13 4133.2 511.478 4077.17 511.478C4021.15 511.478 3970.54 522.322 3927.17 545.818C3883.79 567.506 3847.65 598.23 3816.93 634.377C3786.2 670.524 3762.71 713.9 3744.64 762.698C3726.56 811.496 3713.91 860.295 3708.49 910.9H4433.2C4433.2 858.487 4422.36 809.689 4406.09 760.891Z"
-              fill="#EAFFDA"
-            />
-            <path
-              d="M5398.28 647.028C5382.01 616.303 5360.32 591 5335.02 569.312C5307.91 549.431 5277.19 534.972 5242.85 524.128C5208.51 515.092 5170.56 509.67 5132.61 509.67C5101.89 509.67 5071.16 513.284 5040.44 518.706C5009.72 525.936 4980.8 536.78 4955.5 551.239C4930.2 565.697 4908.51 585.578 4892.24 610.881C4875.98 636.183 4868.75 665.101 4868.75 701.248C4868.75 731.972 4875.98 757.275 4892.24 778.963C4906.7 800.651 4926.58 816.917 4950.08 831.376C4973.57 845.835 4998.87 858.486 5025.98 867.523C5053.09 876.56 5078.39 883.789 5101.89 891.018L5284.42 932.587C5324.18 938.009 5362.13 948.853 5400.08 963.312C5438.04 977.771 5472.37 997.651 5501.29 1022.95C5530.21 1048.26 5555.51 1077.17 5573.58 1113.32C5591.65 1149.47 5602.5 1192.84 5602.5 1241.64C5602.5 1303.09 5588.04 1353.7 5560.93 1397.07C5533.82 1440.45 5497.67 1474.79 5456.11 1501.9C5412.73 1529.01 5365.74 1547.08 5311.53 1559.73C5257.31 1572.39 5204.9 1577.81 5152.49 1577.81C5020.56 1577.81 4913.93 1547.08 4832.6 1483.83C4751.28 1422.38 4704.29 1321.17 4693.45 1183.81H4830.8C4836.22 1275.98 4870.56 1346.47 4932 1393.46C4993.45 1440.45 5069.35 1463.94 5161.52 1463.94C5194.06 1463.94 5228.39 1460.33 5264.54 1453.1C5300.68 1445.87 5333.21 1433.22 5363.94 1416.95C5394.66 1398.88 5419.96 1377.19 5438.04 1350.08C5456.11 1322.97 5466.95 1290.44 5466.95 1250.68C5466.95 1218.15 5459.72 1189.23 5447.07 1167.54C5432.61 1145.85 5414.54 1125.97 5391.05 1111.51C5367.55 1097.06 5342.25 1084.4 5311.53 1073.56C5282.61 1062.72 5251.89 1055.49 5221.16 1048.26L5045.86 1008.5C5000.68 997.651 4959.11 983.193 4922.97 968.734C4885.01 954.275 4852.48 934.395 4823.57 912.706C4794.65 891.018 4772.96 862.101 4756.7 829.569C4740.43 797.037 4733.21 757.275 4733.21 708.477C4733.21 652.45 4745.86 603.651 4771.16 563.89C4796.46 524.128 4828.99 491.596 4870.56 466.294C4910.32 440.991 4955.5 422.917 5006.1 412.073C5056.7 401.229 5105.5 394 5154.3 394C5210.32 394 5262.73 401.229 5311.53 415.688C5360.32 430.147 5401.89 451.835 5439.84 482.56C5477.79 513.284 5506.71 551.239 5528.4 594.615C5550.09 637.991 5562.74 692.211 5564.54 753.661H5427.19C5427.19 712.092 5416.35 675.945 5401.89 643.413L5398.28 647.028Z"
-              fill="#EAFFDA"
-            />
-            <path
-              d="M5936.84 0V218.688H5799.49V0H5936.84ZM5936.84 430.147V1548.89H5799.49V430.147H5936.84Z"
-              fill="#EAFFDA"
-            />
-            <path
-              d="M7116.98 1680.83C7098.9 1747.7 7069.99 1803.72 7032.04 1850.72C6992.28 1897.71 6941.67 1932.05 6878.42 1957.35C6815.16 1982.65 6739.26 1993.5 6647.09 1993.5C6591.06 1993.5 6535.04 1986.27 6482.63 1973.61C6428.41 1960.96 6381.42 1941.08 6338.05 1912.17C6294.67 1885.05 6260.34 1848.91 6231.42 1807.34C6202.5 1763.96 6186.24 1713.36 6182.62 1653.72H6319.98C6327.21 1695.28 6341.66 1731.43 6361.54 1758.54C6383.23 1787.46 6408.53 1809.15 6437.45 1827.22C6466.36 1845.29 6500.7 1857.94 6536.85 1865.17C6572.99 1872.4 6609.14 1877.83 6647.09 1877.83C6773.6 1877.83 6865.77 1841.68 6921.79 1769.39C6977.82 1697.09 7006.73 1592.27 7006.73 1456.72V1304.9H7003.12C6970.59 1373.58 6925.41 1429.61 6863.96 1471.17C6802.51 1512.74 6730.22 1534.43 6648.9 1534.43C6558.53 1534.43 6482.63 1519.97 6419.38 1489.25C6356.12 1458.52 6303.71 1418.76 6262.14 1366.35C6220.58 1313.94 6191.66 1252.49 6171.78 1183.81C6153.71 1113.32 6142.87 1039.22 6142.87 959.697C6142.87 880.174 6153.71 809.688 6177.2 741.009C6198.89 672.33 6231.42 612.688 6274.79 560.275C6318.17 509.67 6370.58 468.101 6433.83 439.183C6497.09 410.266 6569.38 394 6648.9 394C6690.46 394 6730.22 399.422 6766.37 412.073C6802.51 424.725 6836.85 439.183 6867.57 460.872C6898.3 482.56 6925.41 506.055 6948.9 533.165C6972.4 560.275 6990.47 589.193 7004.93 619.917H7008.54V426.532H7145.89V1454.91C7145.89 1538.05 7136.86 1612.15 7118.78 1679.02L7116.98 1680.83ZM6804.32 1382.61C6849.5 1357.31 6887.45 1324.78 6916.37 1283.21C6945.29 1241.64 6968.78 1194.65 6985.05 1140.43C7001.31 1086.21 7008.54 1031.99 7008.54 975.963C7008.54 919.936 7001.31 865.716 6988.66 811.495C6976.01 757.275 6954.32 706.67 6925.41 661.486C6896.49 616.303 6858.54 580.156 6813.36 553.046C6768.18 525.936 6712.15 511.477 6647.09 511.477C6582.03 511.477 6526 524.128 6480.82 551.239C6433.83 578.349 6395.88 612.688 6365.16 656.064C6334.43 699.44 6312.75 748.238 6298.29 804.266C6283.83 860.294 6278.41 916.321 6278.41 974.156C6278.41 1031.99 6285.64 1086.21 6300.1 1138.62C6314.55 1192.84 6336.24 1239.83 6366.96 1281.4C6397.69 1322.97 6435.64 1355.5 6482.63 1380.81C6529.62 1406.11 6583.84 1418.76 6647.09 1418.76C6706.73 1418.76 6759.14 1406.11 6802.51 1380.81L6804.32 1382.61Z"
-              fill="#EAFFDA"
-            />
-            <path
-              d="M7538.07 430.145V623.531H7541.68C7566.98 554.852 7613.97 500.632 7680.84 459.063C7747.71 417.494 7820 397.613 7899.52 397.613C7979.04 397.613 8042.29 408.457 8096.51 428.338C8148.92 448.219 8192.29 477.136 8223.02 513.283C8253.74 549.43 8277.23 594.613 8289.88 648.833C8302.54 703.054 8309.76 762.696 8309.76 829.567V1548.89H8172.41V851.255C8172.41 804.265 8168.8 759.081 8159.76 717.512C8150.73 675.944 8136.27 639.797 8114.58 610.879C8092.89 580.155 8063.98 556.659 8026.03 538.586C7989.88 520.512 7942.89 513.283 7888.67 513.283C7834.46 513.283 7785.66 522.32 7742.29 542.2C7698.91 562.081 7662.77 589.191 7633.85 621.723C7604.94 654.255 7581.44 695.824 7565.18 742.815C7548.91 789.806 7539.87 840.411 7538.07 896.439V1548.89H7400.71V430.145H7538.07Z"
-              fill="#EAFFDA"
-            />
-            <path
-              d="M9213.39 647.028C9197.13 616.303 9175.44 591 9150.14 569.312C9123.03 549.431 9092.31 534.972 9057.97 524.128C9023.63 515.092 8985.68 509.67 8947.73 509.67C8917 509.67 8886.28 513.284 8855.56 518.706C8824.83 525.936 8795.92 536.78 8770.62 551.239C8745.31 565.697 8723.63 585.578 8707.36 610.881C8691.1 636.183 8683.87 665.101 8683.87 701.248C8683.87 731.972 8691.1 757.275 8707.36 778.963C8721.82 800.651 8741.7 816.917 8765.19 831.376C8788.69 845.835 8813.99 858.486 8841.1 867.523C8868.21 876.56 8893.51 883.789 8917 891.018L9099.54 932.587C9139.3 938.009 9177.25 948.853 9215.2 963.312C9253.15 977.771 9287.49 997.651 9316.41 1022.95C9345.32 1048.26 9370.63 1077.17 9388.7 1113.32C9406.77 1149.47 9417.61 1192.84 9417.61 1241.64C9417.61 1303.09 9403.16 1353.7 9376.05 1397.07C9348.94 1440.45 9312.79 1474.79 9271.23 1501.9C9227.85 1529.01 9180.86 1547.08 9126.65 1559.73C9072.43 1572.39 9020.02 1577.81 8967.61 1577.81C8835.68 1577.81 8729.05 1547.08 8647.72 1483.83C8566.4 1422.38 8519.41 1321.17 8508.56 1183.81H8645.92C8651.34 1275.98 8685.68 1346.47 8747.12 1393.46C8808.57 1440.45 8884.47 1463.94 8976.64 1463.94C9009.17 1463.94 9043.51 1460.33 9079.66 1453.1C9115.8 1445.87 9148.33 1433.22 9179.06 1416.95C9209.78 1398.88 9235.08 1377.19 9253.15 1350.08C9271.23 1322.97 9282.07 1290.44 9282.07 1250.68C9282.07 1218.15 9274.84 1189.23 9262.19 1167.54C9247.73 1145.85 9229.66 1125.97 9206.16 1111.51C9182.67 1097.06 9157.37 1084.4 9126.65 1073.56C9097.73 1062.72 9067.01 1055.49 9036.28 1048.26L8860.98 1008.5C8815.8 997.651 8774.23 983.193 8738.09 968.734C8700.13 954.275 8667.6 934.395 8638.69 912.706C8609.77 891.018 8588.08 862.101 8571.82 829.569C8555.55 797.037 8548.32 757.275 8548.32 708.477C8548.32 652.45 8560.97 603.651 8586.28 563.89C8611.58 524.128 8644.11 491.596 8685.68 466.294C8725.44 440.991 8770.62 422.917 8821.22 412.073C8871.82 401.229 8920.62 394 8969.41 394C9025.44 394 9077.85 401.229 9126.65 415.688C9175.44 430.147 9217.01 451.835 9254.96 482.56C9292.91 513.284 9321.83 551.239 9343.52 594.615C9365.2 637.991 9377.85 692.211 9379.66 753.661H9242.31C9242.31 712.092 9231.47 675.945 9217.01 643.413L9213.39 647.028Z"
-              fill="#EAFFDA"
-            />
-            <path
-              d="M3236.8 198.807C3117.52 72.2936 2940.41 5.42202 2703.66 0H2316.9V126.514H2629.56C2741.61 126.514 2837.39 139.165 2916.91 162.661C2996.43 186.156 3063.3 224.11 3115.71 276.523C3168.12 328.936 3206.07 395.807 3231.37 478.945C3256.68 562.083 3267.52 659.679 3267.52 775.349C3267.52 891.018 3254.87 990.422 3231.37 1071.75C3206.07 1154.89 3168.12 1221.76 3115.71 1274.17C3063.3 1326.59 2998.24 1364.54 2916.91 1388.04C2837.39 1411.53 2741.61 1424.18 2629.56 1424.18H2316.9V1550.7H2703.66C2938.6 1545.28 3117.52 1478.4 3236.8 1351.89C3356.07 1225.38 3415.71 1033.8 3415.71 775.349C3415.71 516.899 3356.07 325.321 3236.8 198.807Z"
-              fill="#EAFFDA"
-            />
-            <path
-              d="M1118.69 941.625H968.688V1066.33H1169.29L1118.69 941.625Z"
-              fill="#EAFFDA"
-            />
-            <path
-              d="M697.601 941.624H388.56L697.601 150.009V0H621.696L0 1548.89H155.424L343.379 1066.33H697.601V941.624Z"
-              fill="#EAFFDA"
-            />
-          </svg>
-        </div>
-        <div class="name name-hide">
-          <!---p>Alexandra Milczarek</p--->
-          <svg
-            style="height: 100%"
-            viewBox="0 0 9418 1994"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M984.957 0L1498.22 1357.31L2031.36 0H2248.23V1548.89H2100.03V209.651H2096.42L1566.89 1547.08H1427.73L919.896 209.651H916.281V1547.08H768.086V0H984.957Z"
-              fill="#A3F514"
-            />
-            <path
-              d="M3730.18 1178.39C3744.64 1230.8 3766.32 1277.79 3797.05 1321.17C3827.77 1364.54 3865.72 1397.07 3912.71 1425.99C3959.7 1453.1 4013.92 1467.56 4078.98 1467.56C4178.38 1467.56 4256.09 1442.26 4313.92 1389.85C4369.95 1337.43 4409.71 1268.75 4431.39 1182H4568.75C4539.83 1308.51 4487.42 1407.92 4409.71 1476.6C4331.99 1545.28 4223.56 1581.42 4080.79 1581.42C3992.23 1581.42 3916.33 1565.16 3851.26 1534.43C3786.2 1503.71 3733.79 1460.33 3694.03 1406.11C3654.27 1351.89 3623.55 1288.63 3603.67 1218.15C3583.79 1145.85 3574.75 1071.75 3574.75 992.23C3574.75 918.13 3583.79 845.836 3603.67 775.35C3623.55 704.863 3652.47 641.607 3694.03 585.579C3733.79 529.552 3786.2 484.368 3851.26 451.836C3916.33 419.304 3992.23 401.23 4080.79 401.23C4169.34 401.23 4247.05 419.304 4310.31 455.451C4373.56 491.597 4425.97 538.588 4465.73 598.23C4505.49 656.065 4534.41 724.744 4550.67 800.652C4568.75 876.561 4575.97 954.276 4572.36 1031.99H3712.11C3712.11 1080.79 3719.33 1131.4 3731.99 1185.62L3730.18 1178.39ZM4406.09 760.891C4389.83 713.9 4366.33 670.524 4335.61 634.377C4304.89 598.23 4268.74 567.506 4225.37 545.818C4181.99 524.13 4133.2 511.478 4077.17 511.478C4021.15 511.478 3970.54 522.322 3927.17 545.818C3883.79 567.506 3847.65 598.23 3816.93 634.377C3786.2 670.524 3762.71 713.9 3744.64 762.698C3726.56 811.496 3713.91 860.295 3708.49 910.9H4433.2C4433.2 858.487 4422.36 809.689 4406.09 760.891Z"
-              fill="#79BDC0"
-            />
-            <path
-              d="M5398.28 647.028C5382.01 616.303 5360.32 591 5335.02 569.312C5307.91 549.431 5277.19 534.972 5242.85 524.128C5208.51 515.092 5170.56 509.67 5132.61 509.67C5101.89 509.67 5071.16 513.284 5040.44 518.706C5009.72 525.936 4980.8 536.78 4955.5 551.239C4930.2 565.697 4908.51 585.578 4892.24 610.881C4875.98 636.183 4868.75 665.101 4868.75 701.248C4868.75 731.972 4875.98 757.275 4892.24 778.963C4906.7 800.651 4926.58 816.917 4950.08 831.376C4973.57 845.835 4998.87 858.486 5025.98 867.523C5053.09 876.56 5078.39 883.789 5101.89 891.018L5284.42 932.587C5324.18 938.009 5362.13 948.853 5400.08 963.312C5438.04 977.771 5472.37 997.651 5501.29 1022.95C5530.21 1048.26 5555.51 1077.17 5573.58 1113.32C5591.65 1149.47 5602.5 1192.84 5602.5 1241.64C5602.5 1303.09 5588.04 1353.7 5560.93 1397.07C5533.82 1440.45 5497.67 1474.79 5456.11 1501.9C5412.73 1529.01 5365.74 1547.08 5311.53 1559.73C5257.31 1572.39 5204.9 1577.81 5152.49 1577.81C5020.56 1577.81 4913.93 1547.08 4832.6 1483.83C4751.28 1422.38 4704.29 1321.17 4693.45 1183.81H4830.8C4836.22 1275.98 4870.56 1346.47 4932 1393.46C4993.45 1440.45 5069.35 1463.94 5161.52 1463.94C5194.06 1463.94 5228.39 1460.33 5264.54 1453.1C5300.68 1445.87 5333.21 1433.22 5363.94 1416.95C5394.66 1398.88 5419.96 1377.19 5438.04 1350.08C5456.11 1322.97 5466.95 1290.44 5466.95 1250.68C5466.95 1218.15 5459.72 1189.23 5447.07 1167.54C5432.61 1145.85 5414.54 1125.97 5391.05 1111.51C5367.55 1097.06 5342.25 1084.4 5311.53 1073.56C5282.61 1062.72 5251.89 1055.49 5221.16 1048.26L5045.86 1008.5C5000.68 997.651 4959.11 983.193 4922.97 968.734C4885.01 954.275 4852.48 934.395 4823.57 912.706C4794.65 891.018 4772.96 862.101 4756.7 829.569C4740.43 797.037 4733.21 757.275 4733.21 708.477C4733.21 652.45 4745.86 603.651 4771.16 563.89C4796.46 524.128 4828.99 491.596 4870.56 466.294C4910.32 440.991 4955.5 422.917 5006.1 412.073C5056.7 401.229 5105.5 394 5154.3 394C5210.32 394 5262.73 401.229 5311.53 415.688C5360.32 430.147 5401.89 451.835 5439.84 482.56C5477.79 513.284 5506.71 551.239 5528.4 594.615C5550.09 637.991 5562.74 692.211 5564.54 753.661H5427.19C5427.19 712.092 5416.35 675.945 5401.89 643.413L5398.28 647.028Z"
-              fill="#79BDC0"
-            />
-            <path
-              d="M5936.84 0V218.688H5799.49V0H5936.84ZM5936.84 430.147V1548.89H5799.49V430.147H5936.84Z"
-              fill="#79BDC0"
-            />
-            <path
-              d="M7116.98 1680.83C7098.9 1747.7 7069.99 1803.72 7032.04 1850.72C6992.28 1897.71 6941.67 1932.05 6878.42 1957.35C6815.16 1982.65 6739.26 1993.5 6647.09 1993.5C6591.06 1993.5 6535.04 1986.27 6482.63 1973.61C6428.41 1960.96 6381.42 1941.08 6338.05 1912.17C6294.67 1885.05 6260.34 1848.91 6231.42 1807.34C6202.5 1763.96 6186.24 1713.36 6182.62 1653.72H6319.98C6327.21 1695.28 6341.66 1731.43 6361.54 1758.54C6383.23 1787.46 6408.53 1809.15 6437.45 1827.22C6466.36 1845.29 6500.7 1857.94 6536.85 1865.17C6572.99 1872.4 6609.14 1877.83 6647.09 1877.83C6773.6 1877.83 6865.77 1841.68 6921.79 1769.39C6977.82 1697.09 7006.73 1592.27 7006.73 1456.72V1304.9H7003.12C6970.59 1373.58 6925.41 1429.61 6863.96 1471.17C6802.51 1512.74 6730.22 1534.43 6648.9 1534.43C6558.53 1534.43 6482.63 1519.97 6419.38 1489.25C6356.12 1458.52 6303.71 1418.76 6262.14 1366.35C6220.58 1313.94 6191.66 1252.49 6171.78 1183.81C6153.71 1113.32 6142.87 1039.22 6142.87 959.697C6142.87 880.174 6153.71 809.688 6177.2 741.009C6198.89 672.33 6231.42 612.688 6274.79 560.275C6318.17 509.67 6370.58 468.101 6433.83 439.183C6497.09 410.266 6569.38 394 6648.9 394C6690.46 394 6730.22 399.422 6766.37 412.073C6802.51 424.725 6836.85 439.183 6867.57 460.872C6898.3 482.56 6925.41 506.055 6948.9 533.165C6972.4 560.275 6990.47 589.193 7004.93 619.917H7008.54V426.532H7145.89V1454.91C7145.89 1538.05 7136.86 1612.15 7118.78 1679.02L7116.98 1680.83ZM6804.32 1382.61C6849.5 1357.31 6887.45 1324.78 6916.37 1283.21C6945.29 1241.64 6968.78 1194.65 6985.05 1140.43C7001.31 1086.21 7008.54 1031.99 7008.54 975.963C7008.54 919.936 7001.31 865.716 6988.66 811.495C6976.01 757.275 6954.32 706.67 6925.41 661.486C6896.49 616.303 6858.54 580.156 6813.36 553.046C6768.18 525.936 6712.15 511.477 6647.09 511.477C6582.03 511.477 6526 524.128 6480.82 551.239C6433.83 578.349 6395.88 612.688 6365.16 656.064C6334.43 699.44 6312.75 748.238 6298.29 804.266C6283.83 860.294 6278.41 916.321 6278.41 974.156C6278.41 1031.99 6285.64 1086.21 6300.1 1138.62C6314.55 1192.84 6336.24 1239.83 6366.96 1281.4C6397.69 1322.97 6435.64 1355.5 6482.63 1380.81C6529.62 1406.11 6583.84 1418.76 6647.09 1418.76C6706.73 1418.76 6759.14 1406.11 6802.51 1380.81L6804.32 1382.61Z"
-              fill="#79BDC0"
-            />
-            <path
-              d="M7538.07 430.145V623.531H7541.68C7566.98 554.852 7613.97 500.632 7680.84 459.063C7747.71 417.494 7820 397.613 7899.52 397.613C7979.04 397.613 8042.29 408.457 8096.51 428.338C8148.92 448.219 8192.29 477.136 8223.02 513.283C8253.74 549.43 8277.23 594.613 8289.88 648.833C8302.54 703.054 8309.76 762.696 8309.76 829.567V1548.89H8172.41V851.255C8172.41 804.265 8168.8 759.081 8159.76 717.512C8150.73 675.944 8136.27 639.797 8114.58 610.879C8092.89 580.155 8063.98 556.659 8026.03 538.586C7989.88 520.512 7942.89 513.283 7888.67 513.283C7834.46 513.283 7785.66 522.32 7742.29 542.2C7698.91 562.081 7662.77 589.191 7633.85 621.723C7604.94 654.255 7581.44 695.824 7565.18 742.815C7548.91 789.806 7539.87 840.411 7538.07 896.439V1548.89H7400.71V430.145H7538.07Z"
-              fill="#79BDC0"
-            />
-            <path
-              d="M9213.39 647.028C9197.13 616.303 9175.44 591 9150.14 569.312C9123.03 549.431 9092.31 534.972 9057.97 524.128C9023.63 515.092 8985.68 509.67 8947.73 509.67C8917 509.67 8886.28 513.284 8855.56 518.706C8824.83 525.936 8795.92 536.78 8770.62 551.239C8745.31 565.697 8723.63 585.578 8707.36 610.881C8691.1 636.183 8683.87 665.101 8683.87 701.248C8683.87 731.972 8691.1 757.275 8707.36 778.963C8721.82 800.651 8741.7 816.917 8765.19 831.376C8788.69 845.835 8813.99 858.486 8841.1 867.523C8868.21 876.56 8893.51 883.789 8917 891.018L9099.54 932.587C9139.3 938.009 9177.25 948.853 9215.2 963.312C9253.15 977.771 9287.49 997.651 9316.41 1022.95C9345.32 1048.26 9370.63 1077.17 9388.7 1113.32C9406.77 1149.47 9417.61 1192.84 9417.61 1241.64C9417.61 1303.09 9403.16 1353.7 9376.05 1397.07C9348.94 1440.45 9312.79 1474.79 9271.23 1501.9C9227.85 1529.01 9180.86 1547.08 9126.65 1559.73C9072.43 1572.39 9020.02 1577.81 8967.61 1577.81C8835.68 1577.81 8729.05 1547.08 8647.72 1483.83C8566.4 1422.38 8519.41 1321.17 8508.56 1183.81H8645.92C8651.34 1275.98 8685.68 1346.47 8747.12 1393.46C8808.57 1440.45 8884.47 1463.94 8976.64 1463.94C9009.17 1463.94 9043.51 1460.33 9079.66 1453.1C9115.8 1445.87 9148.33 1433.22 9179.06 1416.95C9209.78 1398.88 9235.08 1377.19 9253.15 1350.08C9271.23 1322.97 9282.07 1290.44 9282.07 1250.68C9282.07 1218.15 9274.84 1189.23 9262.19 1167.54C9247.73 1145.85 9229.66 1125.97 9206.16 1111.51C9182.67 1097.06 9157.37 1084.4 9126.65 1073.56C9097.73 1062.72 9067.01 1055.49 9036.28 1048.26L8860.98 1008.5C8815.8 997.651 8774.23 983.193 8738.09 968.734C8700.13 954.275 8667.6 934.395 8638.69 912.706C8609.77 891.018 8588.08 862.101 8571.82 829.569C8555.55 797.037 8548.32 757.275 8548.32 708.477C8548.32 652.45 8560.97 603.651 8586.28 563.89C8611.58 524.128 8644.11 491.596 8685.68 466.294C8725.44 440.991 8770.62 422.917 8821.22 412.073C8871.82 401.229 8920.62 394 8969.41 394C9025.44 394 9077.85 401.229 9126.65 415.688C9175.44 430.147 9217.01 451.835 9254.96 482.56C9292.91 513.284 9321.83 551.239 9343.52 594.615C9365.2 637.991 9377.85 692.211 9379.66 753.661H9242.31C9242.31 712.092 9231.47 675.945 9217.01 643.413L9213.39 647.028Z"
-              fill="#79BDC0"
-            />
-            <path
-              d="M3236.8 198.807C3117.52 72.2936 2940.41 5.42202 2703.66 0H2316.9V126.514H2629.56C2741.61 126.514 2837.39 139.165 2916.91 162.661C2996.43 186.156 3063.3 224.11 3115.71 276.523C3168.12 328.936 3206.07 395.807 3231.37 478.945C3256.68 562.083 3267.52 659.679 3267.52 775.349C3267.52 891.018 3254.87 990.422 3231.37 1071.75C3206.07 1154.89 3168.12 1221.76 3115.71 1274.17C3063.3 1326.59 2998.24 1364.54 2916.91 1388.04C2837.39 1411.53 2741.61 1424.18 2629.56 1424.18H2316.9V1550.7H2703.66C2938.6 1545.28 3117.52 1478.4 3236.8 1351.89C3356.07 1225.38 3415.71 1033.8 3415.71 775.349C3415.71 516.899 3356.07 325.321 3236.8 198.807Z"
-              fill="#79BDC0"
-            />
-            <path
-              d="M1118.69 941.625H968.688V1066.33H1169.29L1118.69 941.625Z"
-              fill="#006166"
-            />
-            <path
-              d="M697.601 941.624H388.56L697.601 150.009V0H621.696L0 1548.89H155.424L343.379 1066.33H697.601V941.624Z"
-              fill="#006166"
-            />
-          </svg>
-        </div>
+        <a href="#home" class="name name-show">
+          <img src="img/amd_light.png" style="height: 100%" alt="" />
+        </a>
+        <a href="#home" class="name name-hide">
+          <img src="img/amd_og.png" style="height: 100%" alt="" />
+        </a>
       </div>
     </div>
-<div class="sections-outer">
-    <div class="section section1" id="home">
-      <div class="container">
-        <div class="self-image">
-          <img src="img/ME.png" alt="Alexandra Milczarek" />
+    <div class="sections-outer">
+      <section class="section section1" id="home">
+        <div class="container">
+          <a href="#about" class="self-image">
+            <img
+              src="img/ME.png"
+              alt="Alexandra Milczarek"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </a>
+          <div class="cont-text">
+            <div class="text-title">
+              <p>Front End Developer</p>
+              <p>UX & UI Designer</p>
+            </div>
+            <div class="text">
+              <p>
+                Hi! My name is Alexandra Milczarek, I'm a UX/UI Designer &
+                Developer based in Sydney, Australia.
+                <br /><br />
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="text-title">
-          <p>Front End Developer</p>
-          <p>UX & UI Designer</p>
+        <div class="leftLeaves">
+          <img
+            id="leftFrontMiddleOne"
+            src="img/leaves/leftFrontMiddle.png"
+            alt="leftFrontMiddle"
+          />
+          <img
+            id="leftFrontOne"
+            src="img/leaves/leftFront.png"
+            alt="leftFront"
+          />
         </div>
-        <div class="text">
+      </section>
+
+      <section
+        id="about"
+        class="section section2"
+        style="z-index: 10; background-color: #006166"
+      >
+        <div class="about-text">
+          <h2 class="text-title" style="color: #eaffda">About Me:</h2>
+          <br />
           <p>
-            Hi! My name is Alexandra Milczarek, I'm a UX/UI Designer & Developer
-            based in Sydney, Australia.
+            I am a proponent of User Centric Design, who combines aesthetics and
+            technology to craft digital experiences that customers love to use.
             <br /><br />
-            <i>Diploma of Design from Billy Blue College of Design, 2022.</i>
+            Involved in a wide range of projects including brand revitalisation,
+            product design and launch, customer portals, and internal systems
+            (CRM).
+            <br /><br />
+            I have also taken on the role of project manager.
+            <br /><br />
+            Proficient in Figma, Adobe Creative Suite, Javascript, React, Ruby,
+            and Notion for project management.
+            <br /><br />
+            User research and testing are integral to my process, ensuring
+            products and interfaces exceed expectations.
+            <br /><br />
+            I am looking for a role where I can use and develop my skills
+            towards becoming a full-stack developer or product designer.
           </p>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div
-    id="about"
-      class="section section2"
-      style="z-index: 10; background-color: #006166"
-    >
-      <div class="about-text">
-        <h2 class="text-title" style="color: #EAFFDA">About Me:</h2>
-        <br>
-        <p>I am a proponent of User Centric Design, who
-        combines aesthetics and technology to craft digital experiences that
-        customers love to use. 
-        <br><br>
-        Involved in a wide range of projects including
-        brand revitalisation, product design and launch, customer portals, and
-        internal systems (CRM). 
-        <br><br>
-        I have also taken on the role of project
-        manager. 
-        <br><br>
-        Proficient in Figma, Adobe Creative Suite, Javascript, React,
-        Ruby, and Notion for project management. 
-        <br><br>
-        User research and testing are
-        integral to my process, ensuring products and interfaces exceed
-        expectations. 
-        <br><br>
-        I am looking for a role where I can use and develop my
-        skills towards becoming a full-stack developer or product designer.</p>
-      </div>
-    </div>
+      <section class="section section3" id="projects">
+        <div class="p1">
+          <div class="text-title">
+            <p>Industry Projects</p>
+          </div>
+          <div class="my-work">
+            <div class="work">
+              <div class="work-text">
+                <a
+                  target="_blank"
+                  href="https://www.figma.com/file/a686ygGCCt2vaC8jX3mWsQ/Recovery-Metrics?type=design&node-id=10%3A2&mode=design&t=GYKnjmELyJrG8Ctu-1"
+                >
+                  <p>Recovery Metrics</p>
+                </a>
+              </div>
+              <div class="work-image">
+                <img src="img/rm.png" alt="rm" />
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-text">
+                <a target="_blank" href="https://www.mybond.com.au/">
+                  <p>MyBond - Website</p>
+                </a>
+              </div>
+              <div class="work-image">
+                <img src="img/mb.png" alt="mybond" id="mybond" />
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-text">
+                <a
+                  target="_blank"
+                  href="https://www.figma.com/file/nbyKssRdCTfTeGMMIOx7zZ/Current-branding?type=design&node-id=2037%3A5227&mode=design&t=hwKUHUtUdE6fn1CM-1"
+                >
+                  <p>MyBond - UX/UI (Figma File)</p>
+                </a>
+              </div>
+              <div class="work-image">
+                <img src="img/mb.png" alt="mybond" id="mybond" />
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-text">
+                <a target="_blank" href="img/MyBond_Brand.pdf">
+                  <p>MyBond - Branding</p>
+                </a>
+              </div>
+              <div class="work-image">
+                <img src="img/mb.png" alt="mybond" id="mybond" />
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="section section3" id="projects">
-      <div class="p1">
-      <div class="text-title" style="margin-left: 8vw; margin-top: 4vh;">
-        <p>Industry Projects</p>
-      </div>
-      <div class="my-work">
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank" href="https://www.figma.com/file/a686ygGCCt2vaC8jX3mWsQ/Recovery-Metrics?type=design&node-id=10%3A2&mode=design&t=GYKnjmELyJrG8Ctu-1"> <p>Recovery Metrics</p> </a>
+        <br />
+        <div class="p2">
+          <div class="text-title">
+            <p>Personal Projects</p>
           </div>
-          <div class="work-image">
-            <img src="img/rm.png" alt="rm" style="width: 100%; height: auto;"/>
+          <div class="my-work">
+            <div class="work">
+              <div class="work-text">
+                <a target="_blank" href="mycat.html">
+                  <p>My Cat Killed a Cactus</p>
+                </a>
+              </div>
+              <div class="work-image">
+                <img src="img/cactus2.png" alt="cactus" />
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-text">
+                <a target="_blank" href="ldc.html">
+                  <p>La Divina Commedia</p>
+                </a>
+              </div>
+              <div class="work-image">
+                <img src="img/dante.png" alt="Dante-Green" id="dante-green" />
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-text">
+                <a target="_blank" href="tiff.html">
+                  <p>Tiffany & Co. Slider</p>
+                </a>
+              </div>
+              <div class="work-image">
+                <img src="img/Heart-Icon1.png" alt="tiffany heart" />
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-text">
+                <a target="_blank" href="ee.html"> <p>Elektrik Eel</p> </a>
+              </div>
+              <div class="work-image">
+                <img
+                  src="img/eel-green.png"
+                  alt="Elektrik Eel Green"
+                  id="green-eel"
+                />
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-text">
+                <a
+                  target="_blank"
+                  href="https://xd.adobe.com/view/bb257a71-2aeb-4cd5-b6d3-df9dd5376b10-ee76/?fullscreen"
+                >
+                  <p>ALamp (Desktop Only Adobe XD)</p>
+                </a>
+              </div>
+              <div class="work-image alamp">
+                <img src="img/alamp.png" alt="ALamp" />
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-text">
+                <a target="_blank" href="img/ALAMP_BRANDING.pdf">
+                  <p>ALamp Branding</p>
+                </a>
+              </div>
+              <div class="work-image alamp">
+                <img src="img/alamp.png" alt="ALamp" />
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-text">
+                <a target="_blank" href="IMG/ALAMP_PRODUCT.pdf">
+                  <p>ALamp Product Design</p>
+                </a>
+              </div>
+              <div class="work-image alamp">
+                <img src="img/alamp.png" alt="ALamp" />
+              </div>
+            </div>
+
+            <div class="work">
+              <div class="work-text">
+                <a
+                  target="_blank"
+                  href="https://xd.adobe.com/view/6dec09af-9106-409b-9d4e-c68d9cbd1ac3-38bf/?fullscreen&hints=off"
+                >
+                  <p>Intro 2022 (Desktop Only Adobe XD)</p>
+                </a>
+              </div>
+              <div class="work-image">
+                <img src="img/intro.png" alt="intro" />
+              </div>
+            </div>
           </div>
         </div>
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank" href="https://www.mybond.com.au/"> <p>MyBond - Website</p> </a>
+      </section>
+      <section class="section section4" id="contact">
+        <div class="contact-info">
+          <div class="email-me">
+            <a href="mailto:leximilcz@gmail.com"> <p>Send me an email</p> </a>
           </div>
-          <div class="work-image">
-            <img src="img/mb.png" alt="mybond" id="mybond" />
-          </div>
-        </div>
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank" href="https://www.figma.com/file/nbyKssRdCTfTeGMMIOx7zZ/Current-branding?type=design&node-id=2037%3A5227&mode=design&t=hwKUHUtUdE6fn1CM-1"> <p>MyBond - UX/UI (Figma File)</p> </a>
-          </div>
-          <div class="work-image">
-            <img src="img/mb.png" alt="mybond" id="mybond" />
-          </div>
-        </div>
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank" href="img/MyBond_Brand.pdf"> <p>MyBond - Branding</p> </a>
-          </div>
-          <div class="work-image">
-            <img src="img/mb.png" alt="mybond" id="mybond" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="p2">
-      <div class="text-title" style="margin-left: 8vw; margin-top: 4vh;">
-        <p>Personal Projects</p>
-      </div>
-      <div class="my-work">
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank" href="mycat.html"> <p>My Cat Killed a Cactus</p> </a>
-          </div>
-          <div class="work-image">
-            <img src="img/cactus2.png" alt="cactus" />
-          </div>
-        </div>
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank" href="ldc.html"> <p>La Divina Commedia</p> </a>
-          </div>
-          <div class="work-image">
-            <img src="img/dante.png" alt="Dante-Green" id="dante-green" />
-          </div>
-        </div>
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank" href="tiff.html"> <p>Tiffany & Co. Slider</p> </a>
-          </div>
-          <div class="work-image">
-            <img src="img/Heart-Icon1.png" alt="tiffany heart" />
-          </div>
-        </div>
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank" href="ee.html"> <p>Elektrik Eel</p> </a>
-          </div>
-          <div class="work-image">
-            <img
-              src="img/eel-green.png"
-              alt="Elektrik Eel Green"
-              id="green-eel"
-            />
-          </div>
-        </div>
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank"
-              href="https://xd.adobe.com/view/bb257a71-2aeb-4cd5-b6d3-df9dd5376b10-ee76/?fullscreen"
+          <div class="linked-in">
+            <a
+              href="https://www.linkedin.com/in/alexandra-milczarek"
+              target="_blank"
             >
-              <p>ALamp (Desktop Only Adobe XD)</p>
+              <p>View my LinkedIn</p>
             </a>
           </div>
-          <div class="work-image">
-            <img src="img/alamp.png" alt="ALamp" />
-          </div>
-        </div>
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank"
-              href="img/ALAMP_BRANDING.pdf"
-            >
-              <p>ALamp Branding</p>
+          <div class="cv">
+            <a href="img/A_ML_Resume.pdf" target="_blank">
+              <p>Download my CV</p>
             </a>
           </div>
-          <div class="work-image">
-            <img src="img/alamp.png" alt="ALamp" />
-          </div>
         </div>
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank"
-              href="IMG/ALAMP_PRODUCT.pdf"
-            >
-              <p>ALamp Product Design</p>
-            </a>
-          </div>
-          <div class="work-image">
-            <img src="img/alamp.png" alt="ALamp" />
-          </div>
-        </div>
-        
-        <div class="work">
-          <div class="work-text">
-            <a target="_blank"
-              href="https://xd.adobe.com/view/6dec09af-9106-409b-9d4e-c68d9cbd1ac3-38bf/?fullscreen&hints=off"
-            >
-              <p>Intro 2022 (Desktop Only Adobe XD)</p>
-            </a>
-          </div>
-          <div class="work-image">
-            <img src="img/intro.png" alt="intro" />
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
-    </div>
-    <section class="section section4" id="contact">
-      <div class="contact-info">
-        <div class="email-me">
-          <a href="mailto:leximilcz@gmail.com"> <p>Send me an email</p> </a>
-        </div>
-        <div class="linked-in">
-          <a
-            href="https://www.linkedin.com/in/alexandra-milczarek"
-            target="_blank"
-          >
-            <p>View my LinkedIn</p>
-          </a>
-        </div>
-        <div class="cv">
-          <a href="img/A_ML_Resume.pdf" target="_blank">
-            <p>Download my CV</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
   </body>
 </html>
