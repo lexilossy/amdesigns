@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.defaults({
   toggleActions: "play restart restart resume",
   scroller: ".container",
-  markers: true,
+  markers: false,
 });
 
 let tl1 = gsap.timeline({ scrollTrigger: ".screen1" });

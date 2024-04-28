@@ -421,6 +421,16 @@ img {
 }
 
 
+.link {
+    text-decoration: none;
+        color: #ffffff;
+
+}
+.link:hover {
+    color: rgb(195, 255, 0);
+    text-decoration: none;
+}
+
 
 
 
